@@ -1,76 +1,118 @@
-@charset "UTF-8";
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.contents-wrap{
+    background-image: url('../images/background-img1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
 
-html{
-    color: #000;
-    background: #fff;
+/* ========== header ========== */
+#main{
+    height: 100vh;
+    position: relative;
 }
-blockquote, body, code, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, td, textarea, th, ul{
-    margin: 0;
-    padding: 0;
+#main .main-text{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
 }
-table{
-    border-collapse: collapse;
-    border-spacing: 0;
+#main .main-text div:nth-child(2){
+    font-weight: 400;
 }
-fieldset,
-img{
-    border: 0;
-}
-address, caption, cite, code, dfn, em, strong, th, var{
-    font-style: normal;
-    font-weight: normal;
-}
-ol, ul{
-    list-style: none;
-}
-caption, th{
-    text-align: left;
-}
-h1, h2, h3, h4, h5, h6{
-    font-size: 100%;
-    font-weight: normal;
-}
-q:after, q:before{
-    content: "";
-}
-abbr, acronym{
-    border: 0;
-    font-variant: normal;
-}
-sup{
-    vertical-align: text-top;
-}
-sub{
-    vertical-align: text-bottom;
-}
-input, select, textarea{
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-}
-input, select, textarea{
-    *font-size: 100%;
-}
-legend{
-    color: #000;
-}
-html{
-    min-width: 1400px;
-    -webkit-overflow-scrolling: touch;
-    overflow-scrolling: touch;
-    scroll-behavior: smooth;
-}
-a{
-    color: inherit;
-    text-decoration: none;
-}
-/* ============================================================
-======================= reset css end ======================= */
 
-body{
-    color: #1a1d33;
+/* ========== typing-txt ========== */
+.typing-txt{
+    display: none;
 }
+
+ul{
+    list-style:none;
+}
+
+.typing ul li.on{
+    display: inline-block;
+    animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cursor{
+    0%{border-right: 1px solid #fff}
+    50%{border-right: 1px solid #000}
+    100%{border-right: 1px solid #fff}
+}
+
+/* ===== scroll down ===== */
+button.scroll_down{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: 30px;
+    bottom: 60px;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+button.scroll_down:before{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #333;
+    border-radius: 100%;
+    -webkit-animation: scroll_down_btn-animation 2s infinite;
+    animation: scroll_down_btn-animation 2s infinite;
+    box-sizing: border-box;
+}
+@keyframes scroll_down_btn-animation{
+    0%{
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40%{
+      opacity: 1;
+    }
+    80%{
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+@-webkit-keyframes scroll_down_btn-animation{
+    0%{
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40%{
+      opacity: 1;
+    }
+    80%{
+      -webkit-transform: translate(0, 20px);
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+
+
+
+
+
+
+
 div.wrap{
     width: 1400px;
     padding: 0 50px;
@@ -78,21 +120,24 @@ div.wrap{
     position: relative;
     box-sizing: border-box;
 }
+
 section#intro{
-    background: #f5f7fa url('../images/bg_intro.png') 50% 50%;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
+
 section#intro div.wrap{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
 }
+
 section#intro header{
     padding-left: 268px;
 }
+
 section#intro header:after{
     width: 100%;
     height: 2px;
@@ -103,26 +148,30 @@ section#intro header:after{
     content: "";
     display: block;
 }
+
 section#intro header h1{
     font-size: 93px;
     font-weight: 900;
     line-height: 80px;
 }
+
 section#intro header h1 span{
     display: block;
     color: transparent;
-    text-stroke: 2px #1a1d33; /* 아웃라인효과 */
-    -webkit-text-stroke: 2px #1a1d33;    
+    text-stroke: 2px #1a1d33;
+    -webkit-text-stroke: 2px #1a1d33;
 }
-section#intro p{
+
+section#intro header header p {
     font-size: 15px;
     position: absolute;
     top: 56px;
     left: 695px;
 }
+
 section#intro h2{
     font-size: 28px;
-    font-family: "NanumSquare", sans-serif;
+    font-family: "NanumSquare",sans-serif;
     font-weight: 700;
     letter-spacing: 10px;
     line-height: 41px;
@@ -130,6 +179,7 @@ section#intro h2{
     top: 6px;
     left: 50px;
 }
+
 section#intro h2 span{
     font-size: 15px;
     font-weight: 400;
@@ -137,26 +187,32 @@ section#intro h2 span{
     vertical-align: top;
     line-height: 30px;
 }
+
 section#intro ul{
     margin-top: 50px;
 }
+
 section#intro li{
     margin-top: 16px;
 }
+
 section#intro li:first-child{
     margin: 0;
 }
+
 section#intro dt{
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
 }
+
 section#intro dd{
     font-size: 14px;
     font-weight: 400;
     color: #6d6d6d;
     line-height: 20px;
 }
+
 section#intro a.scroll{
     text-indent: -999999px;
     display: block;
@@ -167,7 +223,8 @@ section#intro a.scroll{
     width: 18px;
     height: 32px;
 }
-section#intro a.scroll::after{
+
+section#intro a.scroll:after{
     background: #1a1d33;
     width: 2px;
     height: 5px;
@@ -205,12 +262,12 @@ section#contents div.wrap{
     position: relative;
     margin: 0 auto;
     min-width: 1400px;
-    padding-bottom: 5vh;
+    padding-bottom:5vh;
 }
 section#contents div.imgSlider{
     width: 796px;
     height: 467px;
-    box-shadow: 0 0 54px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 54px 0 rgb(0,0,0,.2);
     position: sticky;
     top: 50%;
     transform: translateY(-50%);
@@ -245,74 +302,10 @@ section#contents div.imgSlider p.num{
     text-align: left;
     letter-spacing: 1px;
 }
+section#contents div.imgSlider button{
+    display: none;
+}
 section#contents div.imgSlider div.slider div.tns-item{
     width: 796px;
     height: 467px;
-}
-section#contents div.title{
-    padding: 50px 0 0 860px;
-    width: 1400px;
-    margin: 0 auto 80vh;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 0;
-}
-section#contents div.title:nth-of-type(2){
-    margin-top: -17vh;
-}
-section#contents div.title:last-child{
-    margin: 0 auto 25vh;
-}
-section#contents div.title::after{
-    position: absolute;
-    content: "";
-    font-size: 65px;
-    font-weight: 800;
-    color: #f1f1f1;
-    display: block;
-    top: 0;
-    margin-left: -3px;
-    z-index: -1;
-}
-section#contents div.title::after{
-    content: "MICRO WEB";
-}
-section#contents div.title.at:after{
-    content: "UI WEB";
-}
-section#contents div.title.mobile:after{
-    content: "MOBILE UIX";
-}
-section#contents div.title h2{
-    font-size: 35px;
-    font-family: 'NanumSquare', sans-serif;
-    font-weight: 300;
-    line-height: 44px;
-}
-section#contents div.title h2 strong{
-    font-weight: 800;
-    display: block;
-}
-section#contents div.title p{
-    margin-top: 20px;
-    font-size: 16px;
-    line-height: 24px;
-    color: #3e3e3e;
-    font-weight: 400;
-}
-section#contents div.title a{
-    display: inline-block;
-    margin-top: 35px;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 13px 18px 13px 72px;
-    background: #121e54 url('../images/bg_arrow.svg') 18px 50% no-repeat;
-    background-size: 41px;
-    transition: background-color 0.3s;
-}
-section#contents div.title a:focus,
-section#contents div.title a:hover{
-    background: #1b2b72 url('../images/bg_arrow.svg') 18px 50% no-repeat;
-    background-size: 41px;
 }
