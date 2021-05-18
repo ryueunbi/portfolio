@@ -108,11 +108,7 @@ button.scroll_down:before{
 }
 
 
-
-
-
-
-
+/* ===== section 01 ===== */
 div.wrap{
     width: 1400px;
     padding: 0 50px;
@@ -120,46 +116,27 @@ div.wrap{
     position: relative;
     box-sizing: border-box;
 }
-
 section#intro{
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
-
 section#intro div.wrap{
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
     z-index: 1;
+    transform: translateY(-50%);
 }
-
 section#intro header{
-    padding-left: 268px;
+    padding-left: 100px;
+}
+.intro-tit{
+    font-style: italic;
+    font-weight: 300;
 }
 
-section#intro header:after{
-    width: 100%;
-    height: 2px;
-    background: #1a1d33;
-    position: absolute;
-    left: -1060px;
-    top: 157px;
-    content: "";
-    display: block;
-}
-
-section#intro header h1{
-    font-size: 93px;
-    font-weight: 900;
-    line-height: 80px;
-}
-
-section#intro header h1 span{
-    display: block;
-    color: transparent;
-    text-stroke: 2px #1a1d33;
-    -webkit-text-stroke: 2px #1a1d33;
+.intro-sub-tit::after{
+    content: "\e9af";"
 }
 
 section#intro header header p {

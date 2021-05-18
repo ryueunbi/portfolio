@@ -31,3 +31,7 @@
 }
 
 
+/* ===== etc ===== */
+.txt-upper{
+    text-transform: uppercase;
+}
