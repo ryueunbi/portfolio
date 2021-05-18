@@ -74,6 +74,10 @@ html{
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+}
+
 *{
     font-family: 'Noto Sans KR', sans-serif;
     color: #333;

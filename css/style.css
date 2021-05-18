@@ -134,9 +134,25 @@ section#intro header{
     font-style: italic;
     font-weight: 300;
 }
-
+.pf-more{
+    position: relative;
+}
+.intro-sub-tit{
+    font-style: italic;
+    font-weight: 400;
+}
+.intro-sub-tit::before{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background-color: #e8321e;
+}
 .intro-sub-tit::after{
-    content: "\e9af";"
+    content: "\e9c5";
+    font-family: 'xeicon';
+    font-weight: 600;
+    font-size: 11px;
 }
 
 section#intro header header p {
