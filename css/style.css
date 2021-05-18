@@ -140,19 +140,34 @@ section#intro header{
 .intro-sub-tit{
     font-style: italic;
     font-weight: 400;
+    transition: transform 2s;
 }
 .intro-sub-tit::before{
     content: "";
     position: absolute;
-    width: 20%;
+    width: 100%;
     height: 2px;
+    top: 27px;
     background-color: #e8321e;
+    will-change: transform;
 }
 .intro-sub-tit::after{
     content: "\e9c5";
     font-family: 'xeicon';
     font-weight: 600;
     font-size: 11px;
+}
+header a{
+    overflow: hidden;
+    position: relative;
+}
+header a::after{
+    opacity 1;
+    transform: translate3d(-100%, 0, 0);
+}
+header a:hover::after,
+header a:focus::after{
+    transform: translate3d(0, 0, 0);
 }
 
 section#intro header header p {
