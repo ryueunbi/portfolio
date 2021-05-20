@@ -119,62 +119,6 @@ button.scroll_down:before{
 
 
 /* ===== section 01 ===== */
-/* div.wrap{
-    width: 1400px;
-    padding: 0 50px;
-    margin: 0 auto;
-    position: relative;
-    box-sizing: border-box;
-}
-section#intro{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-section#intro div.wrap{
-    position: relative;
-    top: 50%;
-    z-index: 1;
-    transform: translateY(-50%);
-}
-section#intro header{
-    padding-left: 100px;
-}
-.pf-date{
-    font-weight: lighter;
-}
-.intro-tit{
-    font-style: italic;
-    font-weight: 300;
-}
-section#intro div.wrap header a{
-    display: inline-block;
-    position: relative;
-    padding: 0.2em 0;
-    overflow: hidden;
-}
-section#intro div.wrap header a::after{
-    opacity: 1;
-    transform: translate3d(-100%, 0, 0);
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.1em;
-    background-color: #e8321e;
-    transition: opacity 300ms, transform 300ms;
-}
-section#intro div.wrap header a:hover::after,
-section#intro div.wrap header a:focus::after{
-  transform: translate3d(0, 0, 0);
-}
-.intro-sub-tit::after{
-    content: "\e9c5";
-    font-family: 'xeicon';
-    font-weight: 600;
-    font-size: 11px;
-} */
 div.wrap{
     width: 1400px;
     padding: 0 50px;
@@ -183,7 +127,6 @@ div.wrap{
     box-sizing: border-box;
 }
 .intro-txt{
-    margin-top: 50%;
     overflow: hidden;
 }
 .intro-txt div.wrap{
@@ -192,20 +135,17 @@ div.wrap{
     z-index: 1;
     transform: translateY(-50%);
 }
-.pf-date{
-    font-weight: lighter;
-}
 .intro-tit{
     font-style: italic;
     font-weight: 300;
 }
-.intro-txt header a{
+.intro-txt a{
     display: inline-block;
     position: relative;
     padding: 0.2em 0;
     overflow: hidden;
 }
-.intro-txt header a::after{
+.intro-txt a::after{
     opacity: 1;
     transform: translate3d(-100%, 0, 0);
     content: '';
@@ -217,8 +157,8 @@ div.wrap{
     background-color: #e8321e;
     transition: opacity 300ms, transform 300ms;
 }
-.intro-txt header a:hover::after,
-.intro-txt header a:focus::after{
+.intro-txt a:hover::after,
+.intro-txt a:focus::after{
   transform: translate3d(0, 0, 0);
 }
 .intro-sub-tit::after{
@@ -227,15 +167,6 @@ div.wrap{
     font-weight: 600;
     font-size: 11px;
 }
-
-
-
-
-
-
-
-
-
 section#contents{
     background-size: contain !important;
     width: 100%;
@@ -258,29 +189,69 @@ section#contents div.imgSlider{
     background: #fff;
     margin-left: 56%;
 }
-section#contents div.imgSlider p.title{
-    color: #313131;
+.sliderControl button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+
+
+
+
+section#contents div.title{
+    width: 50%;
+    margin-bottom: 80vh;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+}
+section#contents div.title:nth-of-type(2){
+    margin-top: -17vh;
+}
+section#contents div.title:last-child{
+    margin-bottom: 60vh;
+}
+section#contents div.title:after{
+    position: absolute;
+    content: "";
+    font-size: 65px;
+    font-weight: 800;
+    color: #f1f1f1;
+    display: block;
+    top: 0;
+    margin-left: -3px;
+    z-index: -1;
+}
+section#contents div.title h2{
+    font-size: 35px;
+    line-height: 44px;
+    font-weight: 300;
+}
+section#contents div.title h2 strong{
+    font-weight: 800;
+    display: block;
+}
+section#contents div.title p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3e3e3e;
+    font-weight: 400;
+}
+footer{
+    padding: 20px 10px;
+    border-top: 1px solid #eee;
     font-size: 12px;
-    line-height: 70px;
-    position: absolute;
-    top: 0;
-    left: 25px;
-    text-align: left;
+    color: #4d4d4d;
 }
-section#contents div.imgSlider p.num{
-    color: #b3b3b3;
-    font-size: 11px;
-    line-height: 70px;
-    position: absolute;
-    top: 0;
-    right: 25px;
-    text-align: left;
-    letter-spacing: 1px;
+footer address{
+    width: 1400px;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 50px;
 }
-section#contents div.imgSlider button{
-    display: none;
-}
-section#contents div.imgSlider div.slider div.tns-item{
-    width: 796px;
-    height: 467px;
-}
+
+
