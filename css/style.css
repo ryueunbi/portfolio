@@ -194,6 +194,13 @@ section#contents div.imgSlider{
     background: transparent;
     cursor: pointer;
 }
+.sliderControl button i{
+    font-size: 16px;
+}
+.sliderControl button i:hover{
+    color: #e8321e;
+}
+
 *,
 *::before,
 *::after {
