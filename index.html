@@ -45,6 +45,25 @@
         
         <section id="contents">
             <div class="wrap">
+                <svg class="ellipse-svg" viewBox="0 0 500 500">
+                    <defs>
+                      <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_top">
+                        <animateTransform attributeName="transform" begin="0s" dur="90s" type="rotate" from="0 250 250" to="360 250 250" repeatCount="indefinite" />
+                      </path>
+                      <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_bottom">
+                        <animateTransform attributeName="transform" begin="0s" dur="90s" type="rotate" from="195 250 250" to="555 250 250" repeatCount="indefinite" />
+                      </path>
+                    </defs>
+                      <text dy="70" textLength="1220">
+                        <!-- textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG -->
+                        <textPath xlink:href="#textcircle_top" class="en fz-18">
+                            HTML CSS JAVASCRIPT BOOTSTRAP WORDPRESS GNUBOARD
+                        </textPath>
+                        <textPath xlink:href="#textcircle_bottom" class="en fz-18">
+                            HTML CSS JAVASCRIPT BOOTSTRAP WORDPRESS GNUBOARD
+                        </textPath>
+                      </text>
+                    </svg>
                 <div class="imgSlider">
                     <div class="slider">
                         <div>
@@ -62,7 +81,7 @@
                     </div>
                 </div>
                 <div class="title intro-txt">
-                    <span class="pf-date fz-15 fc-grey ls-3">
+                    <span class="pf-date en fz-14 fc-grey ls-3">
                         2020.11-2021.06
                     </span>
                     <h1 class="intro-tit en fz-40 txt-upper ls-1">
@@ -76,12 +95,12 @@
                     <ul class="sliderControl">
                         <li>
                             <button class="prev">
-                                <i class="xi-angle-left-thin"></i>
+                                <i class="xi-arrow-left"></i>
                             </button>
                         </li>
                         <li>
                             <button class="next">
-                                <i class="xi-angle-right-thin"></i>
+                                <i class="xi-arrow-right"></i>
                             </button>
                         </li>
                     </ul>
@@ -114,7 +133,7 @@
                 </div>
 
                 <div class="title intro-txt">
-                    <span class="pf-date fz-15 fc-grey ls-3">
+                    <span class="pf-date fz-14 fc-grey ls-3">
                         2020.11-2021.06
                     </span>
                     <h1 class="intro-tit en fz-40 txt-upper ls-1">
@@ -140,7 +159,7 @@
                 </div>
 
                 <div class="title intro-txt">
-                    <span class="pf-date fz-15 fc-grey ls-3">
+                    <span class="pf-date fz-14 fc-grey ls-3">
                         2020.11-2021.06
                     </span>
                     <h1 class="intro-tit en fz-40 txt-upper ls-1">

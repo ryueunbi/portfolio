@@ -194,6 +194,33 @@ section#contents div.imgSlider{
     background: transparent;
     cursor: pointer;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+svg{
+    position: fixed;
+    top: -7%;
+    left: 29%;
+    max-width: 780px;
+}
+text{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    fill: #333;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
