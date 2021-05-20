@@ -8,6 +8,15 @@
 }
 
 /* ===== size ===== */
+.fz-15{
+    font-size: 15px;
+}
+.fz-17{
+    font-size: 17px;
+}
+.fz-18{
+    font-size: 18px;
+}
 .fz-20{
     font-size: 20px;
 }
@@ -24,10 +33,18 @@
     font-size: 50px;
 }
 
+/* ===== color ===== */
+.fc-grey{
+    color: #808080;
+}
+
 
 /* ===== letter spacing ===== */
 .ls-1{
     letter-spacing: -1px;
+}
+.ls-3{
+    letter-spacing: 3px;
 }
 
 

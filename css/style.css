@@ -1,3 +1,8 @@
+::selection{
+    color: #fff;
+    background: #e8321e;
+}
+
 .contents-wrap{
     background-image: url('../images/background-img1.png');
     background-repeat: no-repeat;
@@ -43,6 +48,11 @@ ul{
 }
 
 /* ===== scroll down ===== */
+.scrollbtn{
+    bottom: 0%;
+    left: 50%;
+    position: absolute;
+}
 button.scroll_down{
     position: absolute;
     margin-left: auto;
@@ -130,26 +140,34 @@ section#intro div.wrap{
 section#intro header{
     padding-left: 100px;
 }
+.pf-date{
+    font-weight: lighter;
+}
 .intro-tit{
     font-style: italic;
     font-weight: 300;
 }
-.pf-more{
+section#intro div.wrap header a{
+    display: block;
     position: relative;
+    padding: 0.2em 0;
+    overflow: hidden;
 }
-.intro-sub-tit{
-    font-style: italic;
-    font-weight: 400;
-    transition: transform 2s;
-}
-.intro-sub-tit::before{
-    content: "";
+section#intro div.wrap header a::after{
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+    content: '';
     position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 27px;
+    bottom: 0;
+    left: 0;
+    width: 7.3%;
+    height: 0.1em;
     background-color: #e8321e;
-    will-change: transform;
+    transition: opacity 300ms, transform 300ms;
+}
+section#intro div.wrap header a:hover::after,
+section#intro div.wrap header a:focus::after{
+  transform: translate3d(0, 0, 0);
 }
 .intro-sub-tit::after{
     content: "\e9c5";
@@ -157,107 +175,17 @@ section#intro header{
     font-weight: 600;
     font-size: 11px;
 }
-header a{
-    overflow: hidden;
-    position: relative;
-}
-header a::after{
-    opacity 1;
-    transform: translate3d(-100%, 0, 0);
-}
-header a:hover::after,
-header a:focus::after{
-    transform: translate3d(0, 0, 0);
-}
 
-section#intro header header p {
-    font-size: 15px;
-    position: absolute;
-    top: 56px;
-    left: 695px;
-}
 
-section#intro h2{
-    font-size: 28px;
-    font-family: "NanumSquare",sans-serif;
-    font-weight: 700;
-    letter-spacing: 10px;
-    line-height: 41px;
-    position: absolute;
-    top: 6px;
-    left: 50px;
-}
 
-section#intro h2 span{
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0;
-    vertical-align: top;
-    line-height: 30px;
-}
 
-section#intro ul{
-    margin-top: 50px;
-}
 
-section#intro li{
-    margin-top: 16px;
-}
 
-section#intro li:first-child{
-    margin: 0;
-}
 
-section#intro dt{
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 20px;
-}
 
-section#intro dd{
-    font-size: 14px;
-    font-weight: 400;
-    color: #6d6d6d;
-    line-height: 20px;
-}
 
-section#intro a.scroll{
-    text-indent: -999999px;
-    display: block;
-    position: relative;
-    bottom: -145px;
-    border-radius: 9px;
-    border: 1px solid #1a1d33;
-    width: 18px;
-    height: 32px;
-}
-
-section#intro a.scroll:after{
-    background: #1a1d33;
-    width: 2px;
-    height: 5px;
-    border-radius: 2px;
-    position: absolute;
-    top: 7px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    content: "";
-    animation: scrollAni 1.3s infinite 0.2s;
-}
-
-@keyframes scrollAni{
-    0%{
-        transform: translateY(0);
-    }
-    100%{
-        transform: translateY(5px);
-        opacity: 0;
-    }
-}
 
 section#contents{
-    background: #fff;
     background-size: contain !important;
     width: 100%;
     margin-top: 50vh;
@@ -280,16 +208,6 @@ section#contents div.imgSlider{
     top: 50%;
     transform: translateY(-50%);
     background: #fff;
-}
-section#contents div.imgSlider div.nav{
-    position: absolute;
-    z-index: 99;
-    right: -78px;
-    bottom: 77px;
-    background: #fff;
-    height: 70px;
-    width: 225px;
-    transform: rotate(-90deg);
 }
 section#contents div.imgSlider p.title{
     color: #313131;
