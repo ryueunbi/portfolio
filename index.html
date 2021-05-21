@@ -17,7 +17,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 </head>
 <body>
-    <div class="contents-wrap">
+    <!-- cursor custom -->
+    <div class="cursor mouse"></div>
+
+    <div class="contents-wrap">        
+        <!-- <nav class="menubtn">
+            <div class="menubtn-txt">
+                <ul>
+                    <li><a href="#" class="aboutbtn en fz-24">About</a></li>
+                    <li><a href="#" class="closebtn en fz-24">Close</a></li>
+                </ul>
+            </div>
+        </nav> -->
+
+        <div id="page">
+            <div id="toggle">
+                <ul class="menubtn-txt">
+                    <li><a href="#" class="aboutbtn en fz-24">About</a></li>
+                    <li><a href="#" class="closebtn en fz-24">Close</a></li>
+                </ul>
+            </div>
+            <section id="overlay">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="en fz-70">about</a></li>
+                        <li><a href="#" class="en fz-70">portfolio</a></li>
+                        <li><a href="#" class="en fz-70">contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
+
+        <!-- <div class="menu-fullpage">
+            <nav>
+                <ul>
+                    <li><a href="#">a</a></li>
+                    <li><a href="#">b</a></li>
+                    <li><a href="#">c</a></li>
+                    <li><a href="#">d</a></li>
+                    <li><a href="#">e</a></li>
+                </ul>
+            </nav>
+        </div> -->
+
+
+
+
         <!-- header -->
         <header id="main">
             <div class="main-text">
@@ -57,11 +102,11 @@
                     </defs>
                       <text dy="70" textLength="1220">
                         <!-- textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG -->
-                        <textPath xlink:href="#textcircle_top" class="en fz-18">
+                        <textPath xlink:href="#textcircle_top" class="en fz-12">
                             HTML CSS JAVASCRIPT BOOTSTRAP WORDPRESS GNUBOARD
                         </textPath>
-                        <textPath xlink:href="#textcircle_bottom" class="en fz-18">
-                            HTML CSS JAVASCRIPT BOOTSTRAP WORDPRESS GNUBOARD
+                        <textPath xlink:href="#textcircle_bottom" class="en fz-12">
+                            <!-- HTML CSS JAVASCRIPT BOOTSTRAP WORDPRESS GNUBOARD -->
                         </textPath>
                       </text>
                     </svg>
@@ -119,7 +164,7 @@
                             My works 
                         </span>
                     </a>
-                    <ul class="sliderControl">
+                    <ul class="sliderControl d-flex mt-30">
                         <li>
                             <button class="prev">
                                 <i class="xi-arrow-left"></i>
@@ -127,7 +172,7 @@
                         </li>
                         <li>
                             <button class="next">
-                                <i class="xi-arrow-left"></i>
+                                <i class="xi-arrow-right"></i>
                             </button>
                         </li>
                     </ul>
@@ -145,15 +190,15 @@
                             My works 
                         </span>
                     </a>
-                    <ul class="sliderControl">
+                    <ul class="sliderControl d-flex mt-30">
                         <li>
                             <button class="prev">
-                                <i class="xi-angle-left-thin"></i>
+                                <i class="xi-arrow-left"></i>
                             </button>
                         </li>
                         <li>
                             <button class="next">
-                                <i class="xi-angle-right-thin"></i>
+                                <i class="xi-arrow-right"></i>
                             </button>
                         </li>
                     </ul>
@@ -171,15 +216,15 @@
                             My works 
                         </span>
                     </a>
-                    <ul class="sliderControl">
+                    <ul class="sliderControl d-flex mt-30">
                         <li>
                             <button class="prev">
-                                <i class="xi-angle-left-thin"></i>
+                                <i class="xi-arrow-left"></i>
                             </button>
                         </li>
                         <li>
                             <button class="next">
-                                <i class="xi-angle-right-thin"></i>
+                                <i class="xi-arrow-right"></i>
                             </button>
                         </li>
                     </ul>

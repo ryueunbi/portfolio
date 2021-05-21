@@ -8,6 +8,9 @@
 }
 
 /* ===== size ===== */
+.fz-12{
+    font-size: 12px;
+}
 .fz-14{
     font-size: 14px;
 }
@@ -26,6 +29,9 @@
 .fz-20{
     font-size: 20px;
 }
+.fz-24{
+    font-size: 24px;
+}
 .fz-25{
     font-size: 25px;
 }
@@ -37,6 +43,9 @@
 }
 .fz-50{
     font-size: 50px;
+}
+.fz-70{
+    font-size: 70px;
 }
 
 /* ===== color ===== */
