@@ -43,9 +43,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
       tems: 1,
       mouseDrag: true,
       // loop: true,
-      // autoplay: true,
+      autoplay: true,
       // autoplayHoverPause: true,
-      // autoplayTimeout: 2500,
+      autoplayTimeout: 3000,
       controls: false
     });
   
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
   const brothumb = scrollMonitor.create(document.querySelectorAll("div.title.brothumb"));
 
   ideafestival.enterViewport(function() {
-    for(let i = 0; i < 4; i++) {
+    for(let i = 0; i < 2; i++) {
       document.querySelector("div.slider").children[i].querySelector("img").src = "./images/img_ideafestival0" + (i+1) + ".jpg"
       // contents.style.background = "url('./common/images/bg_ideafestival.jpg') fixed no-repeat";
     }

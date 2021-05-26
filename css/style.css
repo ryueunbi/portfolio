@@ -1,9 +1,15 @@
 ::selection{
     color: #fff;
-    background: #e8321e;
+    background: #f9d81b;
+}
+.contents-wrap{
+    /* background-image: url('../images/background-img1.png'); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
 }
 
-/* cursor custom */
+/* CURSOR CUSTOM */
 .cursor{
     display: block;
     width: 20px;
@@ -12,7 +18,7 @@
     top: 10px;
     left: 0;
     border-radius: 50%;
-    background: #e8321e;
+    background: #f9d81b;
     z-index: 9999999;
     pointer-events: none;
     transition: border 0.3s ease-in-out, background 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
@@ -22,7 +28,7 @@
     height: 36px;
     top: 2px;
     left: -8px;
-    border: 2px solid #e8321e;
+    border: 2px solid #f9d81b;
     background: transparent;
     box-shadow: none;
 }
@@ -35,17 +41,7 @@ a:visited{
 }
 
 
-
-
-
-
-/* menu text */
-.contents-wrap{
-    background-image: url('../images/background-img1.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-}
+/* MENU */
 .menubtn{
     position: relative;
     display: flex;
@@ -75,7 +71,6 @@ a:visited{
     cursor: pointer;
     z-index: 1000;
 }
-
 #toggle div.bar,
 #toggle div.bar:before,
 #toggle div.bar:after{
@@ -83,28 +78,26 @@ a:visited{
     height: 3px;
     background: #333;
 }
-
 #toggle div.bar{
     position: relative;
     transform: translateY(9px);
     transition: all 0.3s 0.3s ease;
 }
-
 #toggle div.bar:before{
     content: "";
     position: absolute;
     bottom: 9px;
     transition: bottom 0.3s 0.3s ease, transform 0.3s ease;
 }
-
- #toggle div.bar:after{
-    content: " ";
+#toggle div.bar:after{
+    content: "";
     position: absolute;
     top: 9px;
     transition: top 0.3s 0.3s ease, transform 0.3s ease;
 }
 
-/* Animation */
+
+/* ANIMATION */
 #toggle div.bar.animate{
     background: #fff;
 }
@@ -199,7 +192,7 @@ a:visited{
     bottom: 0;
     max-height: 1200px;
     opacity: 1;
-    z-index: 100;
+    z-index: 9999;
     transition: all 0.3s ease;
 }
 #page.overlay #overlay nav ul li{
@@ -208,10 +201,11 @@ a:visited{
 }
 
 
-/* ========== header ========== */
+/* ========== MAIN ========== */
 #main{
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 #main .main-text{
     position: absolute;
@@ -222,7 +216,37 @@ a:visited{
 #main .main-text div:nth-child(2){
     font-weight: 400;
 }
-
+.circle01, .circle02, .circle03{
+    position: absolute;
+}
+.circle01{
+    width: 200px;
+    height: 200px;
+    /* background: #f9d81b; */
+    background: #fff;
+    border: 1px solid #f9d81b;
+    border-radius: 100%;
+    top: 10%;
+    left: 10%;
+    animation: ani 2s infinite alternate;
+}
+.circle02{
+    width: 400px;
+    height: 400px;
+    background: #f9d81b;
+    border-radius: 100%;
+    top: 30%;
+    right: -5%;
+    animation: ani2 2.2s infinite alternate;
+}
+@keyframes ani{
+    0%{transform: translte(0, 0);}
+    100%{transform: translate(0, 50px);}
+}
+@keyframes ani2{
+    0%{transform: translte(0, 0);}
+    100%{transform: translate(0, 70px);}
+}
 
 /* ========== typing-txt ========== */
 .typing-txt{
@@ -347,13 +371,13 @@ div.wrap{
 .intro-txt a::after{
     opacity: 1;
     transform: translate3d(-100%, 0, 0);
-    content: '';
+    content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 6px;
     left: 0;
     width: 100%;
-    height: 0.1em;
-    background-color: #e8321e;
+    height: 20px;
+    background-color: #f9d81b22;
     transition: opacity 300ms, transform 300ms;
 }
 .intro-txt a:hover::after,
@@ -379,26 +403,18 @@ section#contents div.wrap{
     padding-bottom:5vh;
 }
 section#contents div.imgSlider{
-    width: 700px;
+    width: 796px;
     height: 480px;
     box-shadow: 0 0 54px 0 rgb(0,0,0,.2);
     position: sticky;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
-    background: #fff;
-    margin-left: 56%;
+    margin-left: 50%;
 }
-.sliderControl button{
-    border: none;
-    background: transparent;
-    cursor: pointer;
+#contents .wrap .imgSlider .tns-outer button{
+    display: none;
 }
-.sliderControl button i{
-    font-size: 16px;
-}
-.sliderControl button i:hover{
-    color: #e8321e;
-}
+
 
 *,
 *::before,
