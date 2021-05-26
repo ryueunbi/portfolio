@@ -1,7 +1,7 @@
 @charset "UTF-8";
 html{
     color : #333;
-    background :#fff;
+    font-size: 16px;
 }
 blockquote,body,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,td,textarea,th,ul {
     margin: 0;
@@ -52,13 +52,6 @@ input,select,textarea{
 }
 legend{
     color: #000;
-}
-html{
-    min-width:1400px;
-    -webkit-overflow-scrolling: touch;
-    overflow-scrolling: touch;
-    overscroll-behavior: none;
-    scroll-behavior: smooth;
 }
 body{
     /* cursor: none; */

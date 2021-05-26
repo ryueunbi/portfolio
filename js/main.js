@@ -43,9 +43,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
       tems: 1,
       mouseDrag: true,
       // loop: true,
-      autoplay: true,
+      // autoplay: true,
       // autoplayHoverPause: true,
-      autoplayTimeout: 3000,
+      // autoplayTimeout: 3000,
       controls: false
     });
   
@@ -143,25 +143,24 @@ document.addEventListener("DOMContentLoaded", function(e) {
     }
 
 // menu
-    $('#toggle').click(function(){
-        $('#toggle>ul').toggleClass('animate');
-        $('#page').toggleClass('overlay');
-    })
-    
-    $('.aboutbtn').click(function(){
-        $('.aboutbtn').css('display', 'none')
-        $('.closebtn').css('display', 'block')
+    $(function(){
+      $('.open').click(function(){
+        $('.close').css('display', 'block')
+        $('.open').css('display', 'none')
+        $('.page-detail').css('display', 'block')
         $('body').css('overflow', 'hidden')
-    })
-    
-    $('.closebtn').click(function(){
-        $('.aboutbtn').css('display', 'block')
-        $('.closebtn').css('display', 'none')
+      })
+
+      $('.close').click(function(){
+        $('.close').css('display', 'none')
+        $('.open').css('display', 'block')
+        $('.page-detail').css('display', 'none')
         $('body').css('overflow', 'scroll')
-    })
-    
-    $('#overlay>nav>ul>li>a').click(function(){
+      })
+
+      $('.page-detail>ul>li>a').click(function(){
         $('body').css('overflow', 'scroll')
-    })
+      })
+    });
 
 });

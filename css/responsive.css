@@ -1,0 +1,32 @@
+/* about page */
+@media (max-width: 1025px){
+    .about-wrap .container{
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .about-wrap .container .d-flex{
+        display: block;
+    }
+    .about-wrap .container .d-flex .w-40{
+        width: 100%;
+    }    
+    .about-wrap .container .d-flex .w-60{
+        width: 100%;
+    }
+    .profile-pic{
+        line-height: 0;
+    }
+    .proile-overlay-txt{
+        top: -30px;
+    }
+    .profile-txt-area{
+        margin-top: 5%;
+    }
+    .profile-txt-area>div:nth-child(2){
+        margin-left: 0;
+    }
+    .profile-list{
+        display: flex;
+        justify-content: space-between;
+    }
+}

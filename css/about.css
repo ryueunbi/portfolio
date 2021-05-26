@@ -1,0 +1,71 @@
+.about-wrap{
+    width: 100%;
+    /* height: 100vh; */
+    position: relative;
+    background: url('../images/about_bg.jpg');
+}
+.fix .logo{
+    padding: 40px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 9999;
+}
+.fix .logo a{
+    font-weight: 700;
+}
+.fix .logo a:hover{
+    color: #f9d81b;
+}
+
+.d-flex{
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img-area{
+    width: 100%;
+    position: relative;
+}
+.profile-pic{
+    line-height: 100vh;
+}
+.proile-overlay-txt{
+    position: absolute;
+    top: 110px;
+    right: -60px;
+    transform: rotate(20deg);
+}
+.proile-overlay-txt h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: 700;
+    color: #f9d81b;
+}
+.profile-pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+.profile-txt-area>div{
+    margin-left: 13%;
+}
+.profile-txt-area .profile-detail{
+    font-weight: 400;
+}
+.list-detail ul li:first-child{
+    font-weight: 600;
+}
+.list-detail ul li{
+    position: relative;
+    padding-left: 25px;
+    line-height: 27px;
+    font-size: 15px;
+}
+.list-detail ul li:first-child::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\e929";
+    font-family: 'xeicon';
+    font-size: 20px;
+    width: 20px;
+}

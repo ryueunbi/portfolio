@@ -2,7 +2,26 @@
     display: flex;
 }
 
-/* margin padding */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row{
+    width: 100%;
+}
+
+
+
+/* width */
+.w-40{
+    width: 40%;
+}
+.w-60{
+    width: 60%;
+}
+
+/* margin top */
 .mt-10{
     margin-top: 10px;
 }
@@ -11,4 +30,22 @@
 }
 .mt-30{
     margin-top: 30px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+
+
+/* margin bottom */
+.mb-5{
+    margin-bottom: 5px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
 }

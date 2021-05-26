@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
+    position: relative;
 }
 
 /* CURSOR CUSTOM */
@@ -37,169 +38,39 @@ a:visited{
     display: inline-block;
     /* padding: 20px; */
     text-decoration: none;
-    cursor: none;
+    /* cursor: none; */
 }
 
 
 /* MENU */
-.menubtn{
+.overlay-page{
     position: relative;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 9999;
-}
-.menubtn ul li{
-    position: absolute;
-}
-.menubtn-txt{
-    position: fixed;
-    transform: rotate(-90deg);
-    font-weight: 600;
-    transition: transform 150ms ease;
-    /* right: 5%;
-    top: 14%; */
-}
-.closebtn{
-    display: none;
-}
-#toggle{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
     z-index: 1000;
 }
-#toggle div.bar,
-#toggle div.bar:before,
-#toggle div.bar:after{
-    width: 100%;
-    height: 3px;
-    background: #333;
-}
-#toggle div.bar{
-    position: relative;
-    transform: translateY(9px);
-    transition: all 0.3s 0.3s ease;
-}
-#toggle div.bar:before{
-    content: "";
-    position: absolute;
-    bottom: 9px;
-    transition: bottom 0.3s 0.3s ease, transform 0.3s ease;
-}
-#toggle div.bar:after{
-    content: "";
-    position: absolute;
-    top: 9px;
-    transition: top 0.3s 0.3s ease, transform 0.3s ease;
-}
-
-
-/* ANIMATION */
-#toggle div.bar.animate{
-    background: #fff;
-}
-#toggle div.bar.animate:after{
-    top: 0;
-    transform: rotate(45deg);
-    transition: top 0.3s ease, transform 0.3s 0.3s ease;
-}
-#toggle div.bar.animate:before{
-    bottom: 0;
-    transform: rotate(-45deg);
-    transition: bottom 0.3s ease, transform 0.3s 0.3s ease;
-}
-#overlay{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3s ease, max-height 0s 0.6s ease;
-    z-index: 100;
-    opacity: 1;
-    background: #edece8;
-}
-#overlay nav{
-  position: absolute;
-  top: 25%;
-  left: 20%;
-}
-#overlay nav ul,
-#overlay nav ul li{
-    margin: 0;
-    padding: 0;
-    display: block;
-    position: static;
-}
-#overlay nav ul{
-    padding: 30px;
-}
-#overlay nav ul li{
-    margin-bottom: 10px;
-    opacity: 0;
-    transition: all 0.9s 0s ease;
-    margin-left: 60px;
-}
-#overlay nav ul li a{
-    font-size: 70px;
+.menubtn>ul>li{
     font-weight: 600;
-    letter-spacing: -1px;
-    position: relative;
-    height: 50px;
-    display: inline-block;
-    transition: all 0.6s 0s ease;
+    position: absolute;
+    right: 1%;
+    margin-top: 3%;
+    transform: rotate(-90deg);
+    cursor: pointer;
 }
-#overlay nav ul li a:after{
-   content: "";
-   position: absolute;
-   left: 0;
-   bottom: 20%;
-   width: 0;
-   opacity: 0;
-   height: 2px;
-   background: #333;
-   transition: all 0.6s 0s ease;
+.menubtn .close{
+    display: none;
 }
-#overlay nav ul li a:hover:after{
-   width: 100%;
-   opacity: 1;
+.page-detail{
+    background: #edece8;
+    width: 100%;
+    height: 100vh;
+    display: none;    
 }
-#page.overlay #overlay nav ul li:nth-child(1){
-   transition: all 0.9s 0.6s ease;
+.page-detail ul{
+    padding-top: 15%;
+    padding-left: 30%;
 }
-#page.overlay #overlay nav ul li:nth-child(2){
-   transition: all 0.9s 0.8s ease;
+.page-detail ul li a{
+    font-weight: 900;
 }
-#page.overlay #overlay nav ul li:nth-child(3){
-   transition: all 0.9s 1.0s ease;
-}
-#page.overlay #overlay nav ul li:nth-child(4){
-   transition: all 0.9s 1.2s ease;
-}
-#page.overlay #overlay nav ul li:nth-child(5){
-   transition: all 0.9s 1.4s ease;
-}
-#page.overlay #overlay{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    max-height: 1200px;
-    opacity: 1;
-    z-index: 9999;
-    transition: all 0.3s ease;
-}
-#page.overlay #overlay nav ul li{
-    margin-left: 0;
-    opacity: 1;
-}
-
 
 /* ========== MAIN ========== */
 #main{
@@ -222,7 +93,6 @@ a:visited{
 .circle01{
     width: 200px;
     height: 200px;
-    /* background: #f9d81b; */
     background: #fff;
     border: 1px solid #f9d81b;
     border-radius: 100%;
@@ -410,11 +280,11 @@ section#contents div.imgSlider{
     top: 60%;
     transform: translateY(-50%);
     margin-left: 50%;
+    background: #fff;
 }
 #contents .wrap .imgSlider .tns-outer button{
     display: none;
 }
-
 
 *,
 *::before,
