@@ -52,8 +52,8 @@
 a,
 a:visited{
     display: inline-block;
+    cursor: none;
     /* padding: 20px; */
-    /* cursor: none; */
 }
 
 /* MENU */
@@ -75,18 +75,11 @@ a:visited{
 .menubtn .close{
     display: none;
 }
-.page-detail{
+.overlay-page .page-detail{
     background: #edece8;
     width: 100%;
     height: 100vh;
     display: none;
-}
-.page-detail ul{
-    padding-top: 15%;
-    padding-left: 30%;
-}
-.page-detail ul li a{
-    font-weight: 900;
 }
 
 /* TOP BUTTON */
@@ -274,7 +267,7 @@ div.wrap{
     left: 0;
     width: 100%;
     height: 20px;
-    background-color: #f9d81b22;
+    background-color: #f9d81b6e;
     transition: opacity 300ms, transform 300ms;
 }
 .intro-txt a:hover::after,

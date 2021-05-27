@@ -1,25 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Comfortaa:wght@300;400;500;600;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Dancing+Script:wght@400;500;600;700&family=Pacifico&display=swap');
+/* 
+font-family: 'Source Code Pro', monospace;
+font-family: 'Baloo 2', cursive;
+font-family: 'Pacifico', cursive; */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
-
-/* ===== font ===== */
+/* ===== FONT ===== */
 .ft-spectral{
     font-family: 'Spectral', sans-serif;
 }
 .ft-montserrat{
     font-family: 'Montserrat', sans-serif;
 }
-.ft-source{
-    font-family: 'Source Code Pro', monospace;
+.ft-baloo{
+    font-family: 'Baloo 2', cursive;
+}
+.ft-pacifico{
+    font-family: 'Pacifico', cursive;
 }
 
-/* ===== size ===== */
+/* ===== SIZE ===== */
 .fz-12{
     font-size: 12px;
 }
@@ -47,6 +49,9 @@
 .fz-25{
     font-size: 25px;
 }
+.fz-28{
+    font-size: 28px;
+}
 .fz-30{
     font-size: 30px;
 }
@@ -62,6 +67,9 @@
 .fz-50{
     font-size: 50px;
 }
+.fz-60{
+    font-size: 60px;
+}
 .fz-70{
     font-size: 70px;
 }
@@ -69,7 +77,7 @@
     font-size: 150px;
 }
 
-/* ===== color ===== */
+/* ===== COLOR ===== */
 .fc-white{
     color: #fff;
 }
@@ -77,7 +85,7 @@
     color: #808080;
 }
 
-/* ===== align ===== */
+/* ===== ALIGN ===== */
 .text-center{
     text-align: center;
 }
@@ -85,7 +93,7 @@
     text-align: left;
 }
 
-/* ===== letter spacing ===== */
+/* ===== LETTER SPACING ===== */
 .ls-1{
     letter-spacing: -1px;
 }
@@ -96,7 +104,7 @@
     letter-spacing: 3px;
 }
 
-/* ===== etc ===== */
-.txt-upper{
+/* ===== ETC ===== */
+.text-upper{
     text-transform: uppercase;
 }

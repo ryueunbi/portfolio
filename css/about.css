@@ -55,23 +55,73 @@
     width: 100%;
     position: relative;
 }
+#skills .skill-tit{
+    font-weight: 800;
+    position: relative;
+}
 #skills ul li{
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     background: #f9d81b;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 30px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s;
+}
+#skills ul li:hover{
+    transform: rotateY(180deg);
 }
 #skills ul li:last-child{
     margin-right: 0;
 }
-#skills ul li span{    
+#skills ul li:nth-child(1) .back span{
+    font-weight: 800;    
+    font-style: italic;
+}
+#skills ul li:nth-child(2) .back span{
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: -1.5px;
+}
+#skills ul li:nth-child(3) .back span{
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+}
+#skills ul li:nth-child(4) .back span{
+    font-family: 'Pacifico', cursive;
+}
+#skills ul li:nth-child(5) .back span{
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+    font-style: italic;
+}
+#skills ul li:last-child .back span{
+    font-family: 'Spectral', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+#skills ul li section.front{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
+#skills ul li section.front{
+    position: absolute;
+    z-index: 2;
+    transform: rotateY(180deg);
+}
+#skills ul li section.back{
+    position: absolute;
+    z-index: 1;
+    transform: rotateY(0deg);    
+    line-height: 30px;
+}
+
 
 
 
