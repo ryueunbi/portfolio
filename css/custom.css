@@ -1,12 +1,19 @@
 .d-flex{
     display: flex;
 }
-
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;    
+}
+.container-fluid{
+    width: 100%;
+}
 .container{
     width: 80%;
     margin: 0 auto;
 }
-
 .row{
     width: 100%;
 }
@@ -16,6 +23,9 @@
 /* width */
 .w-40{
     width: 40%;
+}
+.w-50{
+    width: 50%;
 }
 .w-60{
     width: 60%;
@@ -48,4 +58,14 @@
 }
 .mb-20{
     margin-bottom: 20px;
+}
+
+/* padding top */
+.pt-120{
+    padding-top: 120px;
+}
+
+/* padding-bottom */
+.pb-120{
+    padding-bottom: 120px;
 }

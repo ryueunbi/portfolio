@@ -33,7 +33,7 @@
     };
 
 // imgSlider
-document.addEventListener("DOMContentLoaded", function(e) {
+  document.addEventListener("DOMContentLoaded", function(e) {
     const contents = document.querySelector("section#contents");
   
     const slider = document.querySelector("div.slider");
@@ -107,13 +107,11 @@ document.addEventListener("DOMContentLoaded", function(e) {
   window.addEventListener("scroll", function(e) {
   })
   
-  
-
 // cursor custom
     var mouse = document.querySelector(".cursor");
     var links = document.querySelectorAll("a");
     var bounce = "bounce";
-    var inactive = "inactive"; // function that make the circle follows the mouse pointer
+    var inactive = "inactive";
 
     function moveMouse(e) {
     var x = e.clientX;
@@ -121,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     mouse.style.transform = "translate("
         .concat(x - 15, "px, ")
         .concat(y - 15, "px)");
-    } // function that turn on/off the animation
+    }
 
     function disableAnimation() {
     var hasBounceClass = mouse.classList.contains(bounce);
@@ -132,10 +130,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
     } else {
         mouse.classList.add(bounce);
         mouse.classList.remove(inactive);
+      }
     }
-    } // check for when the mouse is being moving
 
-    document.addEventListener("mousemove", moveMouse); // check wether the user hover/leave a link
+    document.addEventListener("mousemove", moveMouse);
 
     for (var i = 0; i < links.length; i++) {
     links[i].addEventListener("mouseover", disableAnimation);
@@ -162,5 +160,30 @@ document.addEventListener("DOMContentLoaded", function(e) {
         $('body').css('overflow', 'scroll')
       })
     });
+
+// scroll up
+  $(window).on('scroll', function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 400) {
+      $(".header-sticky").removeClass("sticky-bar");
+      $('#back-top').fadeOut(500);
+    } else {
+      $(".header-sticky").addClass("sticky-bar");
+      $('#back-top').fadeIn(500);
+    }
+  });
+
+  $('#back-top a').on("click",function(){
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+
+    $('#back-top a').on({
+    'click': function(){
+      $('#back-top a img').attr('src','images/topbtn_hover.png');
+    }
+  });
 
 });

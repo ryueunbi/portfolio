@@ -8,45 +8,45 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">    
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <!-- xeicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- script -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!-- cursor custom -->
-    <!-- <div class="cursor mouse"></div> -->
+    <div class="cursor mouse"></div>
 
     <div class="contents-wrap">
         <div class="about-wrap">
-            <div class="fix">
+            <div class="fix header-sticky">
                 <div class="logo">
-                    <a class="en fz-24" href="index.html">RYU</a>
+                    <a class="ft-spectral fz-24" href="index.html">RYU</a>
                 </div>
             </div>
             <div class="overlay-page">
                 <div class="menubtn">
                     <ul>
-                        <li><a href="#" class="open en fz-24">About</a></li>
-                        <li><a href="#" class="close en fz-24">Close</a></li>
+                        <li><a href="#" class="open ft-spectral fz-24">About</a></li>
+                        <li><a href="#" class="close ft-spectral fz-24">Close</a></li>
                     </ul>
                 </div>
                 <div class="page-detail">
                     <ul>
                         <li><a href="about.html" class=" fz-50">RYU</a></li>
-                        <li><a href="#" class="en fz-50">WORK</a></li>
-                        <li><a href="#" class="en fz-50">CONTACT</a></li>
+                        <li><a href="#" class="ft-spectral fz-50">WORK</a></li>
+                        <li><a href="#" class="ft-spectral fz-50">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
-
-
-            <div class="container">
-                <div class="row d-flex">
+            <!-- profile -->
+            <div id="profile" class="container">
+                <div class="row d-flex justify-content-center align-items-center pt-120 pb-120">
                     <div class="w-40">
                         <div class="profile-img-area">
                             <div class="profile-pic">
@@ -59,37 +59,35 @@
                     </div>
                     <div class="w-60">
                         <div class="profile-txt-area">
-                            <div class="profile-detail">
+                            <div class="profile-detail" data-aos="fade-up"
+                            data-aos-duration="3000">
                                 <h3 class="fz-24 mb-20">안녕하세요. <b>유은비</b>입니다.</h3>
                                 <p class="fz-15 mb-5">
                                     publishing, UI/UX design
                                 </p>
                                 <span class="fz-15">
-                                    1992. 04. 07　010. 2789. 4590　ryueunbi19@gmail.com
+                                    1992년생 · 010.2789.4590 · ryueunbi19@gmail.com
                                 </span>
                             </div>
-                            <div class="profile-list">
+                            <div class="profile-list" data-aos="fade-up"
+                            data-aos-duration="3000">
                                 <div class="list-detail mt-50">
-                                    <ul>
+                                    <ul class="fz-15">
                                         <li class="mb-10 txt-upper">
                                             Career
                                         </li>
                                         <li>하이미디어학원 UI/UX 웹퍼블리셔 과정 수료(2020.11-2021.06)</li>
                                         <li>하이미디어학원 웹디자인 실무자 과정 수료(2012.11-2013.03)</li>
-                                        <li>웹디자인기능사</li>
-                                        <li>컴퓨터그래픽스운용기능사</li>
-                                        <li>국가공인 GTQ 1급</li>
                                     </ul>
                                 </div>
                                 <div class="list-detail mt-50">
-                                    <ul>
+                                    <ul class="fz-15">
                                         <li class="mb-10 txt-upper">
-                                            Skills
+                                            LICENSE
                                         </li>
-                                        <li>HTML/XHTML, CSS, javaScript ES5/ES6, jQuery</li>
-                                        <li>Bootstrap 3/4</li>
-                                        <li>Photoshop, Illustrator</li>
-                                        <li>워드프레스, 그누보드</li>
+                                        <li>웹디자인기능사</li>
+                                        <li>컴퓨터그래픽스운용기능사</li>
+                                        <li>국가공인 GTQ 1급</li>
                                     </ul>
                                 </div>
                             </div>
@@ -97,12 +95,57 @@
                     </div>
                 </div>
             </div>
+            <!-- skills -->
+            <div id="skill">
+                <div class="container">
+                    <div class="row pt-120 pb-120 d-flex">
+                        <div class="w-50">
+                            <ul class="fz-50">
+                                <li class="skill-hov1">
+                                    <a href="#" class="fc-white ft-source">HTML,CSS</a>
+                                </li>
+                                <li class="skill-hov2">
+                                    <a href="#" class="fc-white ft-source">javaScript</a>
+                                </li>
+                                <li class="skill-hov3">
+                                    <a href="#" class="fc-white ft-source">jQuery</a>
+                                </li>
+                                <li class="skill-hov4">
+                                    <a href="#" class="fc-white ft-source">Bootstrap3/4</a>
+                                </li>
+                                <li class="skill-hov5">
+                                    <a href="#" class="fc-white ft-source">Photoshop,Illustrator</a>
+                                </li>
+                                <li class="skill-hov6">
+                                    <a href="#" class="fc-white ft-source">wordpress,gnuboard</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skill-num w-50 ft-montserrat fz-150 ls-2">
+                            <ul>
+                                <li class="hov1">80</li>
+                                <li class="hov2">30</li>
+                                <li class="hov3">40</li>
+                                <li class="hov4">50</li>
+                                <li class="hov5">80</li> 
+                                <li class="hov6">50</li>
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="go to top!" href="#">
+            <img src="images/topbtn.png" alt="맨위로버튼">
+        </a>
+    </div>
     
     <!-- script -->
-    <script src="js/main.js"></script>
-    <script src="js/scroll.js"></script>
+    <script src="js/about_main.js"></script>    
+    <script>AOS.init();</script>
 </body>
 </html>

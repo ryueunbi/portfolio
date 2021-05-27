@@ -4,9 +4,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
 /* ===== font ===== */
-.en{
+.ft-spectral{
     font-family: 'Spectral', sans-serif;
+}
+.ft-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+.ft-source{
+    font-family: 'Source Code Pro', monospace;
 }
 
 /* ===== size ===== */
@@ -37,6 +47,12 @@
 .fz-25{
     font-size: 25px;
 }
+.fz-30{
+    font-size: 30px;
+}
+.fz-35{
+    font-size: 35px;
+}
 .fz-40{
     font-size: 40px;
 }
@@ -49,21 +65,36 @@
 .fz-70{
     font-size: 70px;
 }
+.fz-150{
+    font-size: 150px;
+}
 
 /* ===== color ===== */
+.fc-white{
+    color: #fff;
+}
 .fc-grey{
     color: #808080;
 }
 
+/* ===== align ===== */
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
 
 /* ===== letter spacing ===== */
 .ls-1{
     letter-spacing: -1px;
 }
+.ls-2{
+    letter-spacing: -2px;
+}
 .ls-3{
     letter-spacing: 3px;
 }
-
 
 /* ===== etc ===== */
 .txt-upper{

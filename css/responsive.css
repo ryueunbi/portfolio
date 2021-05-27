@@ -1,5 +1,9 @@
 /* about page */
 @media (max-width: 1025px){
+    .menubtn>ul>li{
+        top: 40px;
+        right: 30px;
+    }
     .about-wrap .container{
         padding-top: 15%;
         padding-bottom: 15%;

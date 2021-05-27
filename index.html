@@ -10,21 +10,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">    
     <link rel="stylesheet" href="css/about.css">
+    <!-- tiny-slider -->
+    <link rel="stylesheet" href="css/slider.css">
     <!-- xeicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- script -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- tiny-slider -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css" />   
-    <link rel="stylesheet" href="css/slider.css"> 
-    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!-- cursor custom -->
     <div class="cursor mouse"></div>
 
     <div class="contents-wrap">
-        <div class="fix">
+        <div class="fix header-sticky">
             <div class="logo">
                 <a class="en fz-24" href="index.html">RYU</a>
             </div>
@@ -120,7 +121,7 @@
                     <h1 class="intro-tit en fz-40 txt-upper ls-1">
                         About me
                     </h1>
-                    <a href="#">
+                    <a href="about.html">
                         <span class="en fz-17 intro-sub-tit">
                             more  
                         </span>
@@ -173,12 +174,24 @@
                 
             </div>
         </section>
+        <footer>
+            <address class="container fz-12 en text-center">
+                RYU All Rights Reserved.
+            </address>
+        </footer>
     </div>
 
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="go to top!" href="#">
+            <img src="images/topbtn.png" alt="맨위로버튼">
+        </a>
+    </div>
     
     <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
     <script src="js/scrollMonitor.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>    
+    <script>AOS.init();</script>
 </body>
 </html>

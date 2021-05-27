@@ -1,38 +1,19 @@
 .about-wrap{
-    width: 100%;
-    /* height: 100vh; */
-    position: relative;
     background: url('../images/about_bg.jpg');
+    width: 100%;
+    position: relative;
 }
-.fix .logo{
-    padding: 40px;
-    position: fixed;
-    cursor: pointer;
-    z-index: 9999;
-}
-.fix .logo a{
-    font-weight: 700;
-}
-.fix .logo a:hover{
-    color: #f9d81b;
-}
-
-.d-flex{
-    justify-content: center;
-    align-items: center;
-}
-
 .profile-img-area{
     width: 100%;
     position: relative;
 }
 .profile-pic{
-    line-height: 100vh;
+    /* line-height: 100vh; */
 }
 .proile-overlay-txt{
     position: absolute;
-    top: 110px;
-    right: -60px;
+    top: -30px;
+    right: -120px;
     transform: rotate(20deg);
 }
 .proile-overlay-txt h1{
@@ -43,13 +24,15 @@
 }
 .profile-pic img{
     width: 100%;
-    vertical-align: middle;
 }
 .profile-txt-area>div{
-    margin-left: 13%;
+    margin-left: 16%;
 }
 .profile-txt-area .profile-detail{
     font-weight: 400;
+}
+.profile-list div ul li:first-child{
+    color: #2e5bfa;
 }
 .list-detail ul li:first-child{
     font-weight: 600;
@@ -58,7 +41,6 @@
     position: relative;
     padding-left: 25px;
     line-height: 27px;
-    font-size: 15px;
 }
 .list-detail ul li:first-child::before{
     position: absolute;
@@ -68,4 +50,53 @@
     font-family: 'xeicon';
     font-size: 20px;
     width: 20px;
+}
+#skill{
+    background: url('../images/about_skill_bg.jpg');
+    width: 100%;
+    position: relative;
+}
+#skill .container .row ul li{
+    margin: 30px;
+    letter-spacing: -1px;
+}
+#skill .container .row li a{
+    font-weight: 200;
+    font-style: italic;
+    position: relative;
+}
+#skill .container .row li a:before{
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    background: #fff;
+    height: 4px;
+    left: auto;
+    right: 0;
+    width: 0px;
+    transition: all .5s cubic-bezier(.23,1,.32,1);
+    -webkit-transition: all .5s cubic-bezier(.23,1,.32,1);
+}
+#skill .container .row li a:hover:before{
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+#skill .container .row .skill-num{
+    position: relative;
+}
+#skill .container .row .skill-num ul li{
+    display: none;    
+    position: absolute;
+    font-weight: 900;
+    color: #fff;
 }
