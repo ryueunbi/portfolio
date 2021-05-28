@@ -76,10 +76,93 @@ a:visited{
     display: none;
 }
 .overlay-page .page-detail{
-    background: #edece8;
+    background: #fff7c8;
+    width: 100%;
+    height: 100vh; 
+    /* display: none; */
+}
+.page-detail ul{
+    padding-top: 30%;
+}
+.page-detail ul li a{
+    position: relative;
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+.page-detail ul li:first-child a section::after{
+    content: "/";
+    position: absolute;
+    color: #333;
+    font-weight: 100;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    margin-top: 17px;
+    margin-left: -1px;
+}
+.page-detail ul li:nth-child(2) a:nth-child(1) section::after{
+    content: "/";
+    position: absolute;
+    color: #333;
+    font-weight: 100;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    margin-top: 17px;
+    margin-left: 5px;    
+}
+.page-detail ul li:nth-child(2) a:first-child span{
+    margin-left: 13px;
+}
+.page-detail ul li a span{
+    margin-top: 37px;
+    margin-left: 6px;
+    letter-spacing: 0.5px;
+}
+.page-detail ul li:nth-child(2) a:nth-child(2){
+    margin-left: 50px;
+}
+.page-detail ul li:nth-child(2) a:nth-child(2) section::after{
+    content: "/";
+    position: absolute;
+    color: #333;
+    font-weight: 100;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    margin-top: 17px;
+    margin-left: -3px;
+}
+.page-detail ul li:nth-child(3) a section::after{
+    content: "/";
+    position: absolute;
+    color: #333;
+    font-weight: 100;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    margin-top: 17px;
+    margin-left: -3px;    
+}
+
+/* WORK LIST */
+#work-list{
     width: 100%;
     height: 100vh;
-    display: none;
+    background: #eaeaea;
+}
+#work-list .work-list-detail{
+    transform: rotate(-90deg);
+    padding-left: 25%;
+}
+#work-list .work-list-detail li{
+    margin-bottom: 40px;
+    position: relative;
+}
+#work-list .work-list-detail li::after{
+    position: absolute;
+    content: "";
+    width: 65%;
+    height: 1px;
+    top: 90px;
+    left: 0;
+    border-top: 1px solid #333;
 }
 
 /* TOP BUTTON */
@@ -87,6 +170,7 @@ a:visited{
     right: -4%;
     bottom: 2%;
     position: fixed;
+    display: none;
 }
 #back-top img{
     width: 45%;

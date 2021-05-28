@@ -1,36 +1,70 @@
+/* main page */
+@media (max-width: 1025px){
+    svg{
+        left: 9%;
+    }
+    section#contents div.imgSlider{
+        width: 475px;
+        margin-left: 33%;
+    }
+}
+
+
 /* about page */
 @media (max-width: 1025px){
     .menubtn>ul>li{
-        top: 40px;
-        right: 30px;
+        top: 50px;
+        right: 0px;
     }
-    .about-wrap .container{
-        padding-top: 15%;
-        padding-bottom: 15%;
+    .profile-overlay-txt{
+        top: -47px;
+        left: -72px;
+        right: 0;
+        transform: rotate(-27deg);
     }
-    .about-wrap .container .d-flex{
-        display: block;
-    }
-    .about-wrap .container .d-flex .w-40{
-        width: 100%;
-    }    
-    .about-wrap .container .d-flex .w-60{
-        width: 100%;
-    }
-    .profile-pic{
-        line-height: 0;
-    }
-    .proile-overlay-txt{
-        top: -30px;
+    .profile-overlay-txt h1{
+        font-size: 45px;
     }
     .profile-txt-area{
-        margin-top: 5%;
+        width: 95%;
+        margin-left: 5%;
     }
-    .profile-txt-area>div:nth-child(2){
+    .profile-txt-area>div{
         margin-left: 0;
     }
     .profile-list{
         display: flex;
-        justify-content: space-between;
     }
+    #skills ul li{
+        width: 100%;
+        height: 130px;
+        margin-right: 10px;
+    }
+    #skills ul li:nth-child(1) .back span{
+        font-size: 27px;
+        line-height: 30px;
+    }
+    #skills ul li:nth-child(2) .back{
+        line-height: 22px;
+    }
+    #skills ul li:nth-child(2) .back span{
+        font-size: 21px;
+        font-weight: 400;
+    }
+    #skills ul li:nth-child(3) .back span{
+        font-size: 22px;
+    }
+    #skills ul li:nth-child(4) .back span{
+        font-size: 26px;
+    }
+    #skills ul li:nth-child(5) .back span{
+        font-size: 29px;
+    }
+    #skills ul li:nth-child(6) .back{
+        line-height: 20px;
+    }
+    #skills ul li:nth-child(6) .back span{
+        font-size: 24px;
+    }
+
 }

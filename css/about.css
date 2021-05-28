@@ -7,13 +7,13 @@
     width: 100%;
     position: relative;
 }
-.proile-overlay-txt{
+.profile-overlay-txt{
     position: absolute;
     top: -30px;
     right: -120px;
     transform: rotate(20deg);
 }
-.proile-overlay-txt h1{
+.profile-overlay-txt h1{
     font-family: 'Dancing Script', cursive;
     font-size: 60px;
     font-weight: 700;
@@ -78,9 +78,16 @@
 #skills ul li:last-child{
     margin-right: 0;
 }
+#skills ul li .back{
+    position: absolute;
+    z-index: 1;
+    transform: rotateY(0deg);
+    line-height: 30px;
+}
 #skills ul li:nth-child(1) .back span{
     font-weight: 800;    
     font-style: italic;
+    line-height: 40px;
 }
 #skills ul li:nth-child(2) .back span{
     font-family: 'Source Code Pro', monospace;
@@ -115,12 +122,7 @@
     z-index: 2;
     transform: rotateY(180deg);
 }
-#skills ul li section.back{
-    position: absolute;
-    z-index: 1;
-    transform: rotateY(0deg);    
-    line-height: 30px;
-}
+
 
 
 

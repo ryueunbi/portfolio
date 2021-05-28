@@ -145,14 +145,14 @@
       $('.open').click(function(){
         $('.close').css('display', 'block')
         $('.open').css('display', 'none')
-        $('.page-detail').css('display', 'block')
+        $('.page-detail').fadeIn(300)
         $('body').css('overflow', 'hidden')
       })
 
       $('.close').click(function(){
         $('.close').css('display', 'none')
         $('.open').css('display', 'block')
-        $('.page-detail').css('display', 'none')
+        $('.page-detail').fadeOut(300)
         $('body').css('overflow', 'scroll')
       })
 
@@ -161,10 +161,64 @@
       })
     });
 
-// scroll up
+// menu text hover effect
+  $(function(){
+    // 01
+    $('.menu-text-01').mouseover(function(){
+      $('.menu-text-02').css('color', '#ababa9')
+      $('.menu-text-03').css('color', '#ababa9')
+      $('.menu-text-04').css('color', '#ababa9')
+    })
+    $('.menu-text-01').mouseleave(function(){
+      $('.menu-text-02').css('color', '#333')
+      $('.menu-text-03').css('color', '#333')
+      $('.menu-text-04').css('color', '#333')
+    })
+
+    // 02
+    $('.menu-text-02').mouseover(function(){
+      $('.menu-text-01').css('color', '#ababa9')
+      $('.menu-text-03').css('color', '#ababa9')
+      $('.menu-text-04').css('color', '#ababa9')
+    })
+    $('.menu-text-02').mouseleave(function(){
+      $('.menu-text-01').css('color', '#333')
+      $('.menu-text-03').css('color', '#333')
+      $('.menu-text-04').css('color', '#333')
+    })
+
+    // 03
+    $('.menu-text-03').mouseover(function(){
+      $('.menu-text-01').css('color', '#ababa9')
+      $('.menu-text-02').css('color', '#ababa9')
+      $('.menu-text-04').css('color', '#ababa9')
+    })
+    $('.menu-text-03').mouseleave(function(){
+      $('.menu-text-01').css('color', '#333')
+      $('.menu-text-02').css('color', '#333')
+      $('.menu-text-04').css('color', '#333')
+    })
+
+    // 04
+    $('.menu-text-04').mouseover(function(){
+      $('.menu-text-01').css('color', '#ababa9')
+      $('.menu-text-02').css('color', '#ababa9')
+      $('.menu-text-03').css('color', '#ababa9')
+    })
+    $('.menu-text-04').mouseleave(function(){
+      $('.menu-text-01').css('color', '#333')
+      $('.menu-text-02').css('color', '#333')
+      $('.menu-text-03').css('color', '#333')
+    })
+  })
+
+  // scroll up
   $(window).on('scroll', function () {
     var scroll = $(window).scrollTop();
-    if (scroll < 400) {
+    if(scroll < 30) {
+      $('#back-top a img').attr('src','images/topbtn.png');
+    }
+    else if (scroll < 400) {
       $(".header-sticky").removeClass("sticky-bar");
       $('#back-top').fadeOut(500);
     } else {
@@ -185,5 +239,4 @@
       $('#back-top a img').attr('src','images/topbtn_hover.png');
     }
   });
-
 });
