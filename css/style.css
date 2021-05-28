@@ -143,24 +143,19 @@ a:visited{
 
 /* WORK LIST */
 #work-list{
-    background: #fff7c8;
+    background: #eee;
     width: 100%;
-    height: 100vh;    
+    /* height: 100vh; */
+    /* display: none; */
 }
-.work-slide{
-    width: 100%;
+#work-list .work-list-tit{
+    font-weight: 800;
+    font-style: italic;
 }
-#work-list .work-list-detail li{
-    position: absolute;
-    writing-mode: tb-rl;
+.work-list-detail li{
+    margin-bottom: 20px;
 }
-#work-list .work-list-detail li:nth-child(1) a{
-    top: 5%;
-    left: 10%;
-}
-#work-list .work-list-detail li:nth-child(1) a:hover{
 
-}
 
 
 

@@ -61,6 +61,14 @@
 .mb-30{
     margin-bottom: 30px;
 }
+.mb-50{
+    margin-bottom: 50px;
+}
+
+/* margin-left */
+.ml-10{
+    margin-left: 10px;
+}
 
 /* padding top */
 .pt-120{
