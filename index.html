@@ -14,12 +14,12 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- tiny-slider -->
-    <link rel="stylesheet" href="css/slider.css">
+    <!-- slider -->
+    <link rel="stylesheet" href="css/slider.css">    
     <!-- xeicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- script -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div id="work-list">
-                <div class="container">
+                <div class="container-fluid">
                     <ul class="work-list-detail fz-45">
                         <li>
                             <a href="#">식물원</a>
@@ -119,8 +119,6 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-
             </div>
         </div>
         
@@ -271,5 +269,22 @@
     <script src="js/scrollMonitor.js"></script>
     <script src="js/main.js"></script>    
     <script>AOS.init();</script>
+    <script type="text/javascript">
+    jQuery(document).ready(function(){ 
+
+ 
+
+    $(document).mousemove(function(event){ 
+
+    var x = event.pageX, y = event.pageY; 
+
+    $("#PopLayer").css("left",x+"px"); 
+
+    $("#PopLayer").css("top",y+"px"); 
+
+    }); 
+
+    });
+    </script>
 </body>
 </html>

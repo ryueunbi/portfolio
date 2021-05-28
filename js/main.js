@@ -212,7 +212,7 @@
     })
   })
 
-  // scroll up
+// scroll up
   $(window).on('scroll', function () {
     var scroll = $(window).scrollTop();
     if(scroll < 30) {
@@ -238,5 +238,105 @@
     'click': function(){
       $('#back-top a img').attr('src','images/topbtn_hover.png');
     }
-  });
+  })
+
+// work list tab
+  $(function(){
+    $('.tab01').click(function(){
+        $('.tab01').css('width', '30%');
+        $('.tab02').css('width', '10%');
+        $('.tab03').css('width', '10%');
+        $('.tab04').css('width', '10%');
+        $('.tab05').css('width', '10%');
+        $('.tab06').css('width', '10%');
+        $('.tab07').css('width', '10%');
+        $('.tab08').css('width', '10%');
+        return false
+    })
+
+    $('.tab02').click(function(){
+        $('.tab02').css('width', '30%');
+        $('.tab01').css('width', '10%');
+        $('.tab03').css('width', '10%');
+        $('.tab04').css('width', '10%');
+        $('.tab05').css('width', '10%');
+        $('.tab06').css('width', '10%');
+        $('.tab07').css('width', '10%');
+        $('.tab08').css('width', '10%');
+        return false
+    })
+
+    $('.tab03').click(function(){
+        $('.tab03').css('width', '30%');
+        $('.tab01').css('width', '10%');
+        $('.tab02').css('width', '10%');
+        $('.tab04').css('width', '10%');
+        $('.tab05').css('width', '10%');
+        $('.tab06').css('width', '10%');
+        $('.tab07').css('width', '10%');
+        $('.tab08').css('width', '10%');
+        return false
+    })
+
+    $('.tab04').click(function(){
+        $('.tab04').css('width', '30%');
+        $('.tab01').css('width', '10%');
+        $('.tab02').css('width', '10%');
+        $('.tab03').css('width', '10%');
+        $('.tab05').css('width', '10%');
+        $('.tab06').css('width', '10%');
+        $('.tab07').css('width', '10%');
+        $('.tab08').css('width', '10%');
+        return false
+    })
+
+    $('.tab05').click(function(){
+      $('.tab05').css('width', '30%');
+      $('.tab01').css('width', '10%');
+      $('.tab02').css('width', '10%');
+      $('.tab03').css('width', '10%');
+      $('.tab04').css('width', '10%');
+      $('.tab06').css('width', '10%');
+      $('.tab07').css('width', '10%');
+      $('.tab08').css('width', '10%');
+      return false
+    })
+
+  $('.tab06').click(function(){
+    $('.tab06').css('width', '30%');
+    $('.tab01').css('width', '10%');
+    $('.tab02').css('width', '10%');
+    $('.tab03').css('width', '10%');
+    $('.tab04').css('width', '10%');
+    $('.tab05').css('width', '10%');
+    $('.tab07').css('width', '10%');
+    $('.tab08').css('width', '10%');
+    return false
+  })
+
+  $('.tab07').click(function(){
+    $('.tab07').css('width', '30%');
+    $('.tab01').css('width', '10%');
+    $('.tab02').css('width', '10%');
+    $('.tab03').css('width', '10%');
+    $('.tab04').css('width', '10%');
+    $('.tab05').css('width', '10%');
+    $('.tab06').css('width', '10%');
+    $('.tab08').css('width', '10%');
+    return false
+  })
+
+  $('.tab08').click(function(){
+    $('.tab08').css('width', '30%');
+    $('.tab01').css('width', '10%');
+    $('.tab02').css('width', '10%');
+    $('.tab03').css('width', '10%');
+    $('.tab04').css('width', '10%');
+    $('.tab05').css('width', '10%');
+    $('.tab06').css('width', '10%');
+    $('.tab07').css('width', '10%');
+    return false
+  })
+})
+
 });
