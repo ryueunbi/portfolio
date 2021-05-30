@@ -1,4 +1,11 @@
 .page01-wrap{
     width: 100%;
-    background: url('../images/about_bg.jpg');
+    background: url('../images/smw_bg.jpg');
+}
+.smw-header{
+    justify-content: space-between;
+}
+.smw-header .left-tit h3{
+    font-weight: 300;
+    line-height: 65px;
 }

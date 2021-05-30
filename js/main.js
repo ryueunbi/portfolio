@@ -235,7 +235,6 @@
       $('.work-list-tit p:nth-child(2)').css('display', 'none')
       $('.work-list-tit p:nth-child(1)').css('display', 'block')
     })
-
   })
 
   $(function(){

@@ -163,9 +163,6 @@ a:visited{
     transition: all 0.2s ease;
     position: relative;
 }
-.work-list-tit p{
-    position: absolute;
-}
 .work-list-tit p:nth-child(1){
     font-weight: 800;
     font-style: italic;
@@ -185,7 +182,7 @@ a:visited{
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
     transform: scale(1.05);
-    color: #2e5bfa;
+    color: #f9d81b;
 }
 #work-list .work-list-detail div ul{
     position: relative;
@@ -245,7 +242,7 @@ a:visited{
 .circle01{
     width: 200px;
     height: 200px;
-    background: #fff;
+    /* background: #fff; */
     border: 1px solid #f9d81b;
     border-radius: 100%;
     top: 10%;
