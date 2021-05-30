@@ -32,6 +32,9 @@
 }
 
 /* margin top */
+.mt-5{
+    margin-top: 5px;
+}
 .mt-10{
     margin-top: 10px;
 }
@@ -76,6 +79,12 @@
 }
 
 /* padding-bottom */
+.pb-50{
+    padding-bottom: 50px;
+}
+.pb-70{
+    padding-bottom: 70px;
+}
 .pb-120{
     padding-bottom: 120px;
 }

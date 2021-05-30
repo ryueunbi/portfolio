@@ -3,14 +3,14 @@
     background: #f9d81b;
 }
 .contents-wrap{
-    /* background-image: url('../images/background-img1.png'); */
+    /* background-image: url('../images/background-img1.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     position: relative;
 }
 
-/* FIX RYU LOGO */
+/* FIX LOGO */
 .fix .logo{
     padding: 40px;
     position: fixed;
@@ -64,19 +64,29 @@ a:visited{
 .menubtn>ul>li{
     font-weight: 600;
     position: absolute;
-    top: 40px;
-    right: 10px;
     transform: rotate(-90deg);
     cursor: pointer;
+}
+.menubtn li:nth-child(1){    
+    top: 40px;
+    right: 10px;
+}
+.menubtn li:nth-child(2){    
+    top: 33px;
+    right: 33px;
+}
+.menubtn li:nth-child(3){    
+    top: 66px;
+    right: -2px;
 }
 .menubtn>ul>li a:hover{
     color: #2e5bfa;
 }
-.menubtn .close{
+.menubtn .close, .menubtn .back{
     display: none;
 }
 .overlay-page .page-detail{
-    background: #fff7c8;
+    background: #fdfbea;
     width: 100%;
     height: 100vh; 
     display: none;
@@ -143,14 +153,39 @@ a:visited{
 
 /* WORK LIST */
 #work-list{
-    background: #fdfdfd;
+    background: #fdfbea;
     width: 100%;
-    /* height: 100vh; */
-    /* display: none; */
+    height: 100vh;
+    display: none;
 }
-#work-list .work-list-tit{
+.work-list-tit{
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    position: relative;
+}
+.work-list-tit p{
+    position: absolute;
+}
+.work-list-tit p:nth-child(1){
     font-weight: 800;
     font-style: italic;
+}
+.work-list-tit p:nth-child(2){
+    font-family: 'InkLipquid';
+    display: none;
+}
+.work-list-detail div ul li a{
+    display: inline-block;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.work-list-detail div ul li a:hover{
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    color: #2e5bfa;
 }
 #work-list .work-list-detail div ul{
     position: relative;
@@ -163,6 +198,8 @@ a:visited{
 }
 #work-list .work-list-detail div:nth-child(2) ul li{
     position: absolute;
+}
+#work-list .work-list-detail div:nth-child(2) ul li:not(:first-child){
     display: none;
 }
 #work-list .work-list-detail div:nth-child(2) ul li a img{
@@ -174,19 +211,6 @@ a:visited{
     left: 131px;
     width: 66.5%;
 }
-
-
-
-/* #work-list .work-list-detail div:nth-child(2) ul li.pf03-img a img{
-    position: relative;
-}
-#work-list .work-list-detail div:nth-child(2) ul li.pf03-img a video{
-    position: absolute;
-    top: 47px;
-    left: 166px;
-    width: 57%;
-} */
-
 
 
 /* TOP BUTTON */
