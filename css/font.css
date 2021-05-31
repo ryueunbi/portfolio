@@ -34,6 +34,12 @@
     font-family: 'DOSGothic';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
 }
+@font-face {
+    font-family: 'EBSHMJESaeronRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/EBSHMJESaeronRA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* ===== FONT ===== */
 .ft-spectral{
@@ -122,6 +128,9 @@
 }
 .text-left{
     text-align: left;
+}
+.text-right{
+    text-align: right;
 }
 
 /* ===== LETTER SPACING ===== */

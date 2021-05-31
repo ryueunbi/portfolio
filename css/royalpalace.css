@@ -24,11 +24,11 @@
 .smw-video{
     position: absolute;
     top: 75.2px;
-    right: 289px;
+    right: 368.1px;
     z-index: 2;
 }
 .smw-video video{
-    width: 45.3%;
+    width: 55.6%;
 }
 .video-top{
     position: absolute;
@@ -56,15 +56,16 @@
 .color01{
     width: 150px;
     height: 150px;
-    background: #13805d;
+    background: #e1ca57;
     border-radius: 100%;
 }
 .color02{
     width: 150px;
     height: 150px;
-    background: #fff;
-    border: 1px solid #19191996;
+    background: #323650;
+    /* border: 1px solid #323650; */
     border-radius: 100%;
+    color: #fff;
 }
 .color03{
     width: 150px;
@@ -83,6 +84,13 @@
     font-weight: 400;
 }
 .fonttype{
+    font-family: 'EBSHMJESaeronRA';
+    font-weight: 600;
+    color: transparent;
+    text-stroke: 0.1px #333;
+    -webkit-text-stroke: 0.1px #333;
+}
+.fonttype2{
     font-weight: 600;
     color: transparent;
     text-stroke: 1px #333;
