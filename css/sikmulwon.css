@@ -1,11 +1,76 @@
-.page01-wrap{
-    width: 100%;
-    background: url('../images/smw_bg.jpg');
-}
 .smw-header{
-    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    background: url('../images/sik_header.png');
+    position: relative;
 }
-.smw-header .left-tit h3{
-    font-weight: 300;
-    line-height: 65px;
+.smw-tit{
+    z-index: 4;
+}
+.smw-video{
+    position: absolute;
+    top: 75.2px;
+    right: 228px;
+    z-index: 2;
+}
+.smw-video video{
+    width: 45.3%;
+}
+.video-top{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+.video-top img{
+    width: 100%;
+}
+.concept-wrap{
+    width: 100%;
+    background: #f6f6f6;
+}
+.color-wrap div{
+    margin-right: 20px;
+    position: relative;
+}
+.color-wrap div p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+}
+.color01{
+    width: 150px;
+    height: 150px;
+    background: #13805d;
+    border-radius: 100%;
+}
+.color02{
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border: 1px solid #19191996;
+    border-radius: 100%;
+}
+.color03{
+    width: 150px;
+    height: 150px;
+    background: #ec654f;
+    border-radius: 100%;
+}
+.concept-wrap div .concept-tit p{
+    line-height: 30px;
+    font-weight: 400;
+}
+.typo-wrap ul li{
+    margin-bottom: 10px;
+}
+.typo-wrap ul li:first-child{
+    font-weight: lighter;
+}
+.typo-wrap ul li:nth-child(2){
+    font-weight: normal;
+}
+.typo-wrap ul li:last-child{
+    font-weight: bold;
 }

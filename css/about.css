@@ -1,7 +1,10 @@
 .about-wrap{
-    background: url('../images/about_bg.jpg');
+    /* background: url('../images/about_bg.jpg'); */
     width: 100%;
     position: relative;
+}
+#profile div .w-40{
+    background: url('../images/smw_bg.jpg')
 }
 .profile-img-area{
     width: 100%;
