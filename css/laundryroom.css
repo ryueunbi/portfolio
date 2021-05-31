@@ -1,0 +1,115 @@
+.smw-header{
+    width: 100%;
+    height: 600px;
+    background: url('../images/sik_header.png');
+    position: relative;
+}
+.smw-tit{
+    z-index: 4;
+}
+.smw-tit h3{
+    font-weight: 500;
+}
+.viewbtn button{
+    border-radius: 0;
+    border: 1px solid #333;
+    background: #fff;
+    padding: 3px 30px;
+    transition: all .3s;
+}
+.viewbtn button:hover{
+    border: 1px solid #f9d81b;
+    color: #f9d81b;
+}
+.smw-video{
+    position: absolute;
+    top: 75.2px;
+    right: 368.1px;
+    z-index: 2;
+}
+.smw-video video{
+    width: 55.6%;
+}
+.video-top{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+.video-top img{
+    width: 100%;
+}
+.concept-wrap{
+    width: 100%;
+    background: #f6f6f6;
+}
+.color-wrap div{
+    margin-right: 20px;
+    position: relative;
+}
+.color-wrap div p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+}
+.color01{
+    width: 150px;
+    height: 150px;
+    background: #2c4d9c;
+    border-radius: 100%;
+    color: #fff;
+}
+.color02{
+    width: 150px;
+    height: 150px;
+    background: #eb5a79;
+    /* border: 1px solid #323650; */
+    border-radius: 100%;
+    color: #fff;
+}
+.color03{
+    width: 150px;
+    height: 150px;
+    background: #eb5a79;
+    border-radius: 100%;
+}
+.concept-wrap .w-60{
+    margin: 0 auto;
+}
+.concept-wrap div .concept-tit{
+    flex-direction: column;
+}
+.concept-wrap div .concept-tit p{
+    line-height: 30px;
+    font-weight: 400;
+}
+.fonttype{
+    font-family: 'NanumSquare';
+    font-weight: 400;
+    color: transparent;
+    text-stroke: 1px #333;
+    -webkit-text-stroke: 1px #333;
+}
+.fonttype2{
+    font-weight: 600;
+    color: transparent;
+    text-stroke: 1px #333;
+    -webkit-text-stroke: 1px #333;
+}
+.typo-wrap ul li{
+    margin-bottom: 10px;
+    font-family: 'NanumSquare';
+}
+.typo-wrap ul li:first-child{
+    font-weight: lighter;
+}
+.typo-wrap ul li:nth-child(2){
+    font-weight: normal;
+}
+.typo-wrap ul li:last-child{
+    font-weight: bold;
+}
+.wireframe-img img{
+    width: 100%;
+}
