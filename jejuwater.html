@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RYU portfolio</title>
+    <title>제주용암수 Clone coding</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">    
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/jejuwater.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -27,8 +29,7 @@
 <body>
     <!-- cursor custom -->
     <div class="cursor mouse"></div>
-
-    <div class="contents-wrap">
+    <div class="page01-wrap">
         <div class="fix header-sticky">
             <div class="logo">
                 <a class="ft-spectral fz-24" href="index.html">RYU</a>
@@ -161,7 +162,7 @@
                                     </a>
                                 </li>
                                 <li class="pf04-img">
-                                    <a href="#">
+                                    <a href="jejuwater.html">
                                         <img src="images/work_list_02.jpg" alt="제주용암수">
                                         <video autoplay muted loop id="myVideo">
                                             <source src="images/jejuwater2.mp4" type="video/mp4">
@@ -206,141 +207,99 @@
                 </div>
             </div>            
         </div>
-        <!-- header -->
-        <header id="main">
-            <div class="circle-wrap">
-                <div class="circle01"></div>
-                <div class="circle02"></div>
-                <div class="circle03"></div>
-            </div>
-            <div class="main-text">
-                <div class="typing-txt"> 
-                    <ul>
-                        <li>안녕하세요.</li>
-                        <li>웹퍼블리셔 유은비입니다.</li>
-                    </ul>
-                </div> 
-                <div class="typing fz-45">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="scrollbtn">
-                <div class="wrapper">
-                    <a href="#contents">
-                        <button type="button" class="scroll_down" id="scroll_down"></button>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <!-- header end -->
-        
-        <section id="contents">
-            <div class="wrap">
-                <svg class="ellipse-svg" viewBox="0 0 500 500">
-                    <defs>
-                      <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_top">
-                        <animateTransform attributeName="transform" begin="0s" dur="90s" type="rotate" from="0 250 250" to="360 250 250" repeatCount="indefinite" />
-                      </path>
-                      <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_bottom">
-                        <animateTransform attributeName="transform" begin="0s" dur="90s" type="rotate" from="195 250 250" to="555 250 250" repeatCount="indefinite" />
-                      </path>
-                    </defs>
-                      <text dy="70" textLength="1220">
-                        <!-- textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG -->
-                        <textPath xlink:href="#textcircle_top" class="ft-spectral fz-12">
-                            HTML CSS JAVASCRIPT BOOTSTRAP WORDPRESS GNUBOARD
-                        </textPath>
-                        <textPath xlink:href="#textcircle_bottom" class="ft-spectral fz-12">
-                            <!-- HTML CSS JAVASCRIPT BOOTSTRAP WORDPRESS GNUBOARD -->
-                        </textPath>
-                      </text>
-                    </svg>
-                <div class="imgSlider">
-                    <div class="slider">
-                        <div>
-                            <img src="images/img_ideafestival01.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="images/img_ideafestival02.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="images/img_ideafestival03.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="images/img_ideafestival04.jpg" alt="">
+        <!-- 고정메뉴끝 -->
+        <div class="container-fluid">
+            <div class="smw-top">
+                <div class="smw-header d-flex justify-content-center align-items-center">
+                    <div class="smw-tit text-right mr-80">
+                        <h3 class="fz-60 ls-1">오설록</h3>
+                        <p class="fz-25">redesign</p>
+                        <div class="viewbtn mt-50">
+                            <button type="button" class="fz-20 ft-spectral">
+                                <a href="http://ryueb.co.kr/osulloc" target="_blank">
+                                    view.
+                                </a>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="title intro-txt ideafestival">
-                    <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
-                        2021 portfolio
-                    </span>
-                    <h1 class="intro-tit ft-spectral fz-40 text-upper ls-1">
-                        About me
-                    </h1>
-                    <a href="about.html">
-                        <span class="ft-spectral fz-17 intro-sub-tit">
-                            more  
-                        </span>
-                    </a>
+                <div class="smw-video">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="images/osulloc1.mp4" type="video/mp4">
+                    </video>
                 </div>
-
-                <div class="title intro-txt at">
-                    <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
-                        team project
-                    </span>
-                    <h1 class="intro-tit ft-spectral fz-40 text-upper ls-1">
-                        royal palace
-                    </h1>
-                    <a href="#">
-                        <span class="ft-spectral fz-17 intro-sub-tit">
-                            more 
-                        </span>
-                    </a>
+                <div class="video-top">
+                    <img src="images/sik_header_top.png" alt="">
                 </div>
-
-                <div class="title intro-txt shopick">
-                    <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
-                        2020.11-2021.06
-                    </span>
-                    <h1 class="intro-tit ft-spectral fz-40 text-upper ls-1">
-                        I'm a web publisher.
-                    </h1>
-                    <a href="#">
-                        <span class="ft-spectral fz-17 intro-sub-tit">
-                            My works 
-                        </span>
-                    </a>
-                </div>
-
-                <div class="title intro-txt brothumb">
-                    <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
-                        2020.11-2021.06
-                    </span>
-                    <h1 class="intro-tit ft-spectral fz-40 text-upper ls-1">
-                        I'm a web publisher.
-                    </h1>
-                    <a href="#">
-                        <span class="ft-spectral fz-17 intro-sub-tit">
-                            My works 
-                        </span>
-                    </a>
-                </div>
-
-                
-                
             </div>
-        </section>
-        <footer>
-            <address class="container fz-14 ft-spectral text-center">
-                Copyright ⓒ 2021 RYU All Rights Reserved.
-            </address>
-        </footer>
+            <div class="concept-wrap pt-120 pb-120">
+                <div class="container">                    
+                    <div class="row">
+                        <div class="w-80 text-center">
+                            <div class="concept-tit d-flex justify-content-center align-items-center">
+                                <h3 class="fz-40 ft-spectral">Concept</h3>
+                                <p class="fz-17 ls-1 mt-20">
+                                    차 브랜드 오설록 사이트를 리뉴얼하였습니다.<br> Bootstrap을 기반으로 제작하였으며, 원페이지 형식으로 디자인하여 페이지의 내용이 효과적으로 전달되도록 하였습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-70 d-flex">
+                        <div class="w-50">
+                            <h3 class="fz-40 ft-spectral">Color</h3>
+                            <div class="color-wrap d-flex mt-20">
+                                <div class="color01">
+                                    <p class="fz-20 ft-montserrat">#699851</p>
+                                </div>
+                                <div class="color02">
+                                    <p class="fz-20 ft-montserrat">#333333</p>
+                                </div>
+                                <!-- <div class="color03">
+                                    <p class="fz-20 ft-montserrat">#ec654f</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="w-50">
+                            <h3 class="fz-40 ft-spectral">typography</h3>
+                            <h3 class="fz-40 fonttype mt-20">카페24고운밤</h3>
+                            <!-- <h3 class="fz-40 fonttype2">노토산스 KR</h3> -->
+                            <div class="typo-wrap d-flex mt-10">
+                                <ul class="fz-20 ls-1" style="font-family: 'Cafe24Oneprettynight';">
+                                    <li>Normal
+                                        <span>차와 제주가 선사하는 삶의 아름다움</span>
+                                    </li>
+                                    <!-- <li>Regular
+                                        <span>차와 제주가 선사하는 삶의 아름다움</span>
+                                    </li>
+                                    <li>Medium
+                                        <span>차와 제주가 선사하는 삶의 아름다움</span>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-70">
+                        <div class="wireframe text-center">
+                            <h3 class="fz-40 ft-spectral">
+                                responsive
+                            </h3>
+                            <div class="wireframe-img">
+                                <img src="images/osulloc_mockup.png" alt="디바이스목업">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <footer>
+        <address class="container fz-14 ft-spectral text-center">
+            Copyright ⓒ 2021 RYU All Rights Reserved.
+        </address>
+    </footer>
 
+    
+    
     <!-- Scroll Up -->
     <div id="back-top">
         <a title="go to top!" href="#">
@@ -349,9 +308,7 @@
     </div>
     
     <!-- script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
-    <script src="js/scrollMonitor.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/page_about.js"></script>
     <script>AOS.init();</script>
 </body>
 </html>

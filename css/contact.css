@@ -32,21 +32,45 @@
 #skills ul li{
     width: 180px;
     height: 180px;
-    background: #f9d81b;
+    background: transparent;
+    border: 1px solid #f9d81b;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 30px;
     position: relative;
-    transform-style: preserve-3d;
-    transition: all 1s;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
 }
-#skills ul li:hover{
-    transform: rotateY(180deg);
+#skills ul li:after{
+    content: "";
+    width: 100%;
+    height: 0%;
+    border-radius: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+    background: #f9d81b;
 }
 #skills ul li:last-child{
     margin-right: 0;
+}
+#skills ul li:hover{
+    color: #333;
+}
+#skills ul li:hover::after{
+    /* width: 100%; */
+    height: 30%;
+    z-index: -1;
 }
 #skills ul li .back{
     position: absolute;
@@ -54,30 +78,30 @@
     transform: rotateY(0deg);
     line-height: 30px;
 }
-#skills ul li:nth-child(1) .back span{
+#skills ul li:nth-child(1){
     font-weight: 800;    
     font-style: italic;
     line-height: 40px;
 }
-#skills ul li:nth-child(2) .back span{
+#skills ul li:nth-child(2){
     font-family: 'Source Code Pro', monospace;
     letter-spacing: -1.5px;
 }
-#skills ul li:nth-child(3) .back span{
+#skills ul li:nth-child(3){
     font-family: 'Comfortaa', cursive;
     letter-spacing: -1.5px;
     font-weight: 700;
 }
-#skills ul li:nth-child(4) .back span{
+#skills ul li:nth-child(4){
     font-family: 'Pacifico', cursive;
 }
-#skills ul li:nth-child(5) .back span{
+#skills ul li:nth-child(5){
     font-family: 'Baloo 2', cursive;
     font-weight: 500;
     letter-spacing: -1.5px;
     font-style: italic;
 }
-#skills ul li:last-child .back span{
+#skills ul li:last-child{
     font-family: 'Spectral', sans-serif;
     font-weight: 700;
     letter-spacing: -1px;
