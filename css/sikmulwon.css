@@ -12,19 +12,20 @@
 }
 .viewbtn button{
     border-radius: 0;
-    border: 1px solid #333;
+    border: 1px solid #f9d81b;
     background: #fff;
     padding: 3px 30px;
     transition: all .3s;
 }
 .viewbtn button:hover{
     border: 1px solid #f9d81b;
-    color: #f9d81b;
+    color: #333;
+    background: #f9d81b;
 }
 .smw-video{
     position: absolute;
     top: 75.2px;
-    right: 289px;
+    right: 228px;
     z-index: 2;
 }
 .smw-video video{

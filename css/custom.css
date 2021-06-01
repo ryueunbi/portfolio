@@ -102,8 +102,14 @@
 .mr-80{
     margin-right: 80px;
 }
+.mr-150{
+    margin-right: 150px;
+}
 
 /* padding top */
+.pt-50{
+    padding-top: 50px;
+}
 .pt-120{
     padding-top: 120px;
 }
