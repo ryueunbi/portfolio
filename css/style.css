@@ -163,8 +163,10 @@ a:visited{
     transition: all 0.2s ease;
     position: relative;
 }
+.work-list-tit p{
+    line-height: 30px;
+}
 .work-list-tit p:nth-child(1){
-    font-weight: 800;
     font-style: italic;
 }
 .work-list-tit p:nth-child(2){
@@ -423,10 +425,10 @@ section#contents div.wrap{
 }
 section#contents div.imgSlider{
     width: 796px;
-    height: 480px;
+    height: 467px;
     box-shadow: 0 0 54px 0 rgb(0,0,0,.2);
     position: sticky;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
     margin-left: 50%;
     background: #fff;
