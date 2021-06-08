@@ -16,6 +16,7 @@
 }
 .row{
     width: 100%;
+    position: relative;
 }
 
 /* width */
@@ -41,6 +42,9 @@
 }
 .mt-10{
     margin-top: 10px;
+}
+.mt-15{
+    margin-top: 15px;
 }
 .mt-20{
     margin-top: 20px;
@@ -81,6 +85,9 @@
 /* margin-left */
 .ml-10{
     margin-left: 10px;
+}
+.ml-15{
+    margin-left: 15px;
 }
 .ml-50{
     margin-left: 50px;

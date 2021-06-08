@@ -3,10 +3,8 @@
     background: #f9d81b;
 }
 .contents-wrap{
-    /* background-image: url('../images/background-img1.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed; */
+    width: 100%;
+    background: #fff;
     position: relative;
 }
 
@@ -172,6 +170,9 @@ a:visited{
 .work-list-tit p:nth-child(2){
     font-family: 'InkLipquid';
     display: none;
+}
+.work-list-detail{
+    display: flex;
 }
 .work-list-detail div ul li a{
     display: inline-block;
@@ -364,9 +365,9 @@ button.scroll_down:before{
 
 /* ===== section 01 ===== */
 div.wrap{
-    width: 1400px;
-    padding: 0 50px;
-    margin: 0 auto;
+    /* width: 1400px; */
+    /* padding: 0 50px; */
+    /* margin: 0 auto; */
     position: relative;
     box-sizing: border-box;
 }
@@ -415,12 +416,11 @@ section#contents{
     background-size: contain !important;
     width: 100%;
     margin-top: 50vh;
-    min-width: 1400px;
 }
 section#contents div.wrap{
     position: relative;
     margin: 0 auto;
-    min-width: 1400px;
+    /* min-width: 1400px; */
     padding-bottom:5vh;
 }
 section#contents div.imgSlider{
@@ -436,6 +436,11 @@ section#contents div.imgSlider{
 #contents .wrap .imgSlider .tns-outer button{
     display: none;
 }
+
+.rs-img{
+    di
+}
+
 
 *,
 *::before,

@@ -28,7 +28,7 @@
     <!-- cursor custom -->
     <div class="cursor mouse"></div>
 
-    <div class="contents-wrap">
+    <div class="container-fluid">
         <div class="fix header-sticky">
             <div class="logo">
                 <a class="ft-spectral fz-24" href="index.html">RYU</a>
@@ -84,57 +84,69 @@
                         <p class="fz-30 ls-1">my works.</p>
                         <p class="fz-30">글자 또는 이미지를 클릭해주세요<i>!</i></p>
                     </div>
-                    <div class="row d-flex work-list-detail">
+                    <div class="row work-list-detail">
                         <div class="w-40">                            
                             <ul class="fz-35">
-                                <li class="pf01">
-                                    <a href="#">식물원</a>
-                                    <span class="ft-montserrat fz-16 ml-10">
-                                        ui/ux design
-                                    </span>
-                                </li>
-                                <li class="pf02">
-                                    <a href="#" style="font-family: 'EBSHunminjeongeumSBA';">
-                                        경복궁
-                                    </a>
-                                    <span class="ft-montserrat fz-16 ml-10">
-                                        team project
-                                    </span>
-                                </li>
-                                <li class="pf03">
-                                    <a href="#" style="font-family: 'InkLipquid';">
-                                        런드리룸
-                                    </a>
-                                    <span class="ft-montserrat fz-16 ml-10">branding site</span>
-                                </li>
-                                <li class="pf04">
-                                    <a href="#" style="font-family: 'Jeju Hallasan';">
-                                        제주용암수
-                                    </a>
-                                    <span class="ft-montserrat fz-16 ml-10">clone coding</span>
-                                </li>
-                                <li class="pf05">
-                                    <a href="#" style="font-family: 'Cafe24Oneprettynight';">
-                                        오설록
-                                    </a>
-                                    <span class="ft-montserrat fz-16 ml-10">renewal site</span>
-                                </li>
-                                <li class="pf06">
-                                    <a href="#" style="font-family: 'MaplestoryOTFBold';">
-                                        굿다이노
-                                    </a>
-                                    <span class="ft-montserrat fz-16 ml-10">landing page</span>
-                                </li>
-                                <li class="pf07">
-                                    <a href="#" style="font-family: 'DOSGothic';">
-                                        돈BTI
-                                    </a>
-                                </li>
-                                <li class="pf08">
-                                    <a href="#" style="font-family: 'SeoulNamsanM';">
-                                        오늘의날씨
-                                    </a>
-                                </li>
+                                <div class="list-top">
+                                    <li class="pf01">
+                                        <a href="#">식물원</a>
+                                        <span class="ft-montserrat fz-16 ml-10">
+                                            ui/ux design
+                                        </span>
+                                    </li>
+                                    <li class="pf02">
+                                        <a href="#" style="font-family: 'EBSHunminjeongeumSBA';">
+                                            경복궁
+                                        </a>
+                                        <span class="ft-montserrat fz-16 ml-10">
+                                            team project
+                                        </span>
+                                    </li>
+                                    <li class="pf03">
+                                        <a href="#" style="font-family: 'InkLipquid';">
+                                            런드리룸
+                                        </a>
+                                        <span class="ft-montserrat fz-16 ml-10">branding site</span>
+                                    </li>
+                                    <li class="pf04">
+                                        <a href="#" style="font-family: 'Jeju Hallasan';">
+                                            제주용암수
+                                        </a>
+                                        <span class="ft-montserrat fz-16 ml-10">clone coding</span>
+                                    </li>
+                                </div>
+                                <div class="list-bottom">
+                                    <li class="pf05">
+                                        <a href="#" style="font-family: 'Cafe24Oneprettynight';">
+                                            오설록
+                                        </a>
+                                        <span class="ft-montserrat fz-16 ml-10">renewal site</span>
+                                    </li>
+                                    <li class="pf06">
+                                        <a href="#" style="font-family: 'MaplestoryOTFBold';">
+                                            굿다이노
+                                        </a>
+                                        <span class="ft-montserrat fz-16 ml-10">landing page</span>
+                                    </li>
+                                    <div class="app_work d-flex">
+                                        <li class="pf07">
+                                            <a href="#" style="font-family: 'DOSGothic';">
+                                                돈BTI
+                                            </a>
+                                        </li>
+                                        <span class="ft-montserrat fz-20 ml-10 mt-15">&</span>
+                                        <li class="pf08 ml-15">
+                                            <a href="#" style="font-family: 'SeoulNamsanM';">
+                                                오늘의날씨
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <li class="pf08">
+                                        <a href="#">
+                                            기타 작업물
+                                        </a>
+                                    </li>
+                                </div>
                             </ul>
                         </div>
                         <div class="w-60">
@@ -211,7 +223,6 @@
             <div class="circle-wrap">
                 <div class="circle01"></div>
                 <div class="circle02"></div>
-                <div class="circle03"></div>
             </div>
             <div class="main-text">
                 <div class="typing-txt"> 
@@ -237,103 +248,161 @@
         </header>
         <!-- header end -->
         
-        <section id="contents">
-            <div class="wrap">
-                <svg class="ellipse-svg" viewBox="0 0 500 500">
-                    <defs>
-                      <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_top">
-                        <animateTransform attributeName="transform" begin="0s" dur="90s" type="rotate" from="0 250 250" to="360 250 250" repeatCount="indefinite" />
-                      </path>
-                      <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_bottom">
-                        <animateTransform attributeName="transform" begin="0s" dur="90s" type="rotate" from="195 250 250" to="555 250 250" repeatCount="indefinite" />
-                      </path>
-                    </defs>
-                      <text dy="70" textLength="1220">
-                        <!-- textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG -->
-                        <textPath xlink:href="#textcircle_top" class="ft-spectral fz-12">
-                            HTML CSS JAVASCRIPT BOOTSTRAP WORDPRESS GNUBOARD
-                        </textPath>
-                        <textPath xlink:href="#textcircle_bottom" class="ft-spectral fz-12">
-                            <!-- HTML CSS JAVASCRIPT BOOTSTRAP WORDPRESS GNUBOARD -->
-                        </textPath>
-                      </text>
-                    </svg>
-                <div class="imgSlider">
-                    <div class="slider">
-                        <div>
-                            <img src="images/img_ideafestival01.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="images/img_ideafestival02.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="images/img_ideafestival03.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="images/img_ideafestival04.jpg" alt="">
+        <div class="container">
+            <section id="contents">
+                <div class="row">
+                    <svg class="ellipse-svg" viewBox="0 0 500 500">
+                        <defs>
+                          <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_top">
+                            <animateTransform attributeName="transform" begin="0s" dur="90s" type="rotate" from="0 250 250" to="360 250 250" repeatCount="indefinite" />
+                          </path>
+                          <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle_bottom">
+                            <animateTransform attributeName="transform" begin="0s" dur="90s" type="rotate" from="195 250 250" to="555 250 250" repeatCount="indefinite" />
+                          </path>
+                        </defs>
+                          <text dy="70" textLength="1220">
+                            <!-- textLength (essentially the circumference of the circle) is used as an alternative to letter-spacing for Firefox, which currently doesn't support letter-spacing for SVG -->
+                            <textPath xlink:href="#textcircle_top" class="ft-spectral fz-12">
+                                HTML CSS JAVASCRIPT BOOTSTRAP WORDPRESS GNUBOARD
+                            </textPath>
+                            <textPath xlink:href="#textcircle_bottom" class="ft-spectral fz-12">
+                                <!-- HTML CSS JAVASCRIPT BOOTSTRAP WORDPRESS GNUBOARD -->
+                            </textPath>
+                          </text>
+                        </svg>
+                    <div class="imgSlider">
+                        <div class="slider">
+                            <div>
+                                <img src="images/img_ideafestival01.jpg" alt="어바웃미">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="title intro-txt ideafestival">
-                    <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
-                        2021 portfolio
-                    </span>
-                    <h1 class="intro-tit ft-spectral fz-40 text-upper ls-1">
-                        About me
-                    </h1>
-                    <a href="about.html">
-                        <span class="ft-spectral fz-17 intro-sub-tit">
-                            more  
-                        </span>
-                    </a>
-                </div>
+                    <div class="rs-area">
+                        <div class="sec01">
+                            <img src="images/img_ideafestival01.jpg" alt="">
+                            <div class="rs-text mt-30 ml-10">
+                                <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
+                                    2021 portfolio
+                                </span>
+                                <h1 class="fz-40 mt-10 ls-1" style="font-family: 'InkLipquid';">
+                                    어바웃 미
+                                </h1>
+                                <a href="about.html">
+                                    <span class="ft-spectral fz-17 intro-sub-tit">
+                                        more  
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sec02">
+                            <img src="images/img_at01.jpg" alt="">
+                            <div class="rs-text mt-30 ml-10">
+                                <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
+                                    ui/ux design
+                                </span>
+                                <h1 class="fz-40 mt-10 ls-1" style="font-family: 'InkLipquid';">
+                                    식물어플 식물원
+                                </h1>
+                                <a href="sikmulwon.html">
+                                    <span class="ft-spectral fz-17 intro-sub-tit">
+                                        more 
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sec03">
+                            <img src="images/img_shopick01.jpg" alt="">
+                            <div class="rs-text mt-30 ml-10">
+                                <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
+                                    team project
+                                </span>
+                                <h1 class="fz-40 mt-10 ls-1" style="font-family: 'InkLipquid';">
+                                    경복궁
+                                </h1>
+                                <a href="royalpalace.html">
+                                    <span class="ft-spectral fz-17 intro-sub-tit">
+                                        more 
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sec04">
+                            <img src="images/img_brothumb01.jpg" alt="">
+                            <div class="rs-text mt-30 ml-10">
+                                <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
+                                    renewal site
+                                </span>
+                                <h1 class="fz-40 mt-10 ls-1" style="font-family: 'InkLipquid';">
+                                    오설록
+                                </h1>
+                                <a href="osulloc.html">
+                                    <span class="ft-spectral fz-17 intro-sub-tit">
+                                        more 
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- responsive end -->
 
-                <div class="title intro-txt at">
-                    <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
-                        team project
-                    </span>
-                    <h1 class="intro-tit ft-spectral fz-40 text-upper ls-1">
-                        royal palace
-                    </h1>
-                    <a href="#">
-                        <span class="ft-spectral fz-17 intro-sub-tit">
-                            more 
+                    <div class="title intro-txt ideafestival">
+                        <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
+                            2021 portfolio
                         </span>
-                    </a>
-                </div>
-
-                <div class="title intro-txt shopick">
-                    <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
-                        2020.11-2021.06
-                    </span>
-                    <h1 class="intro-tit ft-spectral fz-40 text-upper ls-1">
-                        I'm a web publisher.
-                    </h1>
-                    <a href="#">
-                        <span class="ft-spectral fz-17 intro-sub-tit">
-                            My works 
+                        <h1 class="fz-40 mt-10 ls-1" style="font-family: 'InkLipquid';">
+                            어바웃 미
+                        </h1>
+                        <a href="about.html">
+                            <span class="ft-spectral fz-17 intro-sub-tit">
+                                more  
+                            </span>
+                        </a>
+                    </div>    
+                    <div class="title intro-txt at">
+                        <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
+                            ui/ux design
                         </span>
-                    </a>
-                </div>
-
-                <div class="title intro-txt brothumb">
-                    <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
-                        2020.11-2021.06
-                    </span>
-                    <h1 class="intro-tit ft-spectral fz-40 text-upper ls-1">
-                        I'm a web publisher.
-                    </h1>
-                    <a href="#">
-                        <span class="ft-spectral fz-17 intro-sub-tit">
-                            My works 
+                        <h1 class="fz-40 mt-10 ls-1" style="font-family: 'InkLipquid';">
+                            식물어플 식물원
+                        </h1>
+                        <a href="sikmulwon.html">
+                            <span class="ft-spectral fz-17 intro-sub-tit">
+                                more 
+                            </span>
+                        </a>
+                    </div>
+    
+                    <div class="title intro-txt shopick">
+                        <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
+                            team project
                         </span>
-                    </a>
+                        <h1 class="fz-40 mt-10 ls-1" style="font-family: 'InkLipquid';">
+                            경복궁
+                        </h1>
+                        <a href="royalpalace.html">
+                            <span class="ft-spectral fz-17 intro-sub-tit">
+                                more 
+                            </span>
+                        </a>
+                    </div>
+    
+                    <div class="title intro-txt brothumb">
+                        <span class="ft-spectral pf-date fz-14 fc-grey ls-3 text-upper">
+                            renewal site
+                        </span>
+                        <h1 class="fz-40 mt-10 ls-1" style="font-family: 'InkLipquid';">
+                            오설록
+                        </h1>
+                        <a href="osulloc.html">
+                            <span class="ft-spectral fz-17 intro-sub-tit">
+                                more 
+                            </span>
+                        </a>
+                    </div>
                 </div>
+            </section>
+        </div>
 
-                
-                
-            </div>
-        </section>
         <footer>
             <address class="container fz-14 ft-spectral text-center">
                 Copyright ⓒ 2021 RYU All Rights Reserved.
@@ -343,13 +412,12 @@
 
     <!-- Scroll Up -->
     <div id="back-top">
-        <a title="go to top!" href="#">
+        <a title="GO TO TOP" href="#">
             <img src="images/topbtn.png" alt="맨위로버튼">
         </a>
     </div>
     
     <!-- script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.js"></script>
     <script src="js/scrollMonitor.js"></script>
     <script src="js/main.js"></script>
     <script>AOS.init();</script>
