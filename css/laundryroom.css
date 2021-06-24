@@ -1,7 +1,6 @@
-.smw-header{
+.laundry-header{
     width: 100%;
     height: 600px;
-    /* background: url('../images/sik_header.png'); */
     position: relative;
 }
 .macbook{
@@ -122,12 +121,12 @@
     right: 0;
     top: 0;
 }
-.smw-tit{
+.laundry-tit{
     position: absolute;
     top: 20%;
-    right: 20%;
+    right: 19.2%;
 }
-.smw-tit h3{
+.laundry-tit h3{
     font-weight: 500;
 }
 .viewbtn button{
@@ -142,15 +141,14 @@
     color: #333;
     background: #f9d81b;
 }
-.concept-wrap{
+.laundry-concept-wrap{
     width: 100%;
     background: #f6f6f6;
 }
-.color-wrap div{
-    margin-right: 20px;
+.laundry-color div{
     position: relative;
 }
-.color-wrap div p{
+.laundry-color div p{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -163,6 +161,7 @@
     background: #2c4d9c;
     border-radius: 100%;
     color: #fff;
+    margin-right: 20px;
 }
 .color02{
     width: 150px;
@@ -172,46 +171,48 @@
     border-radius: 100%;
     color: #fff;
 }
-.color03{
-    width: 150px;
-    height: 150px;
-    background: #eb5a79;
-    border-radius: 100%;
+.laundry-concept{
+    justify-content: space-between;
 }
-.concept-wrap .w-60{
+.laundry-concept-wrap .w-60{
     margin: 0 auto;
 }
-.concept-wrap div .concept-tit{
+.laundry-concept-wrap div .concept-tit{
     flex-direction: column;
 }
-.concept-wrap div .concept-tit p{
-    line-height: 30px;
+.laundry-concept-wrap div .concept-tit p{
+    line-height: 40px;
     font-weight: 400;
 }
-.fonttype{
+.laundry-fonttype{
     font-family: 'NanumSquare';
     font-weight: 400;
     color: transparent;
     text-stroke: 1px #333;
     -webkit-text-stroke: 1px #333;
 }
-.fonttype2{
+.laundry-fonttype2{
     font-weight: 600;
     color: transparent;
     text-stroke: 1px #333;
     -webkit-text-stroke: 1px #333;
 }
-.typo-wrap ul li{
+.laundry-typo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.laundry-typo-wrap ul li{
     margin-bottom: 10px;
     font-family: 'NanumSquare';
 }
-.typo-wrap ul li:first-child{
+.laundry-typo-wrap ul li:first-child{
     font-weight: lighter;
 }
-.typo-wrap ul li:nth-child(2){
+.laundry-typo-wrap ul li:nth-child(2){
     font-weight: normal;
 }
-.typo-wrap ul li:last-child{
+.laundry-typo-wrap ul li:last-child{
     font-weight: bold;
 }
 .wireframe-img img{

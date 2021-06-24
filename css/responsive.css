@@ -1,4 +1,4 @@
-/* main page */
+/* ========== main page ========== */
 @media (max-width: 1025px){
     .circle01{
         top: 20%;
@@ -19,7 +19,11 @@
         display: none;
     }
     .rs-area{
+        display: block;
         margin-top: 10%;
+    }
+    .rs-area div img{
+        width: 100%;
     }
     .sec01, .sec02, .sec03{
         /* margin-bottom: 50%; */
@@ -28,9 +32,6 @@
     .sec04{
         height: 60vh;
     }
-    .rs-area div img{
-        width: 100%;
-    }
     .title{
         display: none;
     }
@@ -38,27 +39,312 @@
         padding-top: 100%;
     }
     /* menu */
+    #work-list .container{
+        width: 75%;
+    }
+    .work-list-tit{
+        display: none;
+    }
+    .rs-work-list-tit{
+        display: block;
+    }
     .work-list-detail{
         display: block;
     }
     .work-list-detail .w-40{
         width: 100%;
     }
-    .list-top, .list-bottom{
-        display: flex;
+    .work-list-detail .w-60{
+        width: 100%;
     }
-    .list-top li{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    #work-list .work-list-detail div:nth-child(2) ul {
+        margin-top: 4%;
     }
     .list-top li span{
         margin-left: 0;
     }
 }
+@media (max-width: 769px){
+    .work-list-detail .w-40 .fz-35{
+        font-size: 25px;
+    }
+    #work-list .work-list-detail div ul li{
+        margin-bottom: 10px;
+    }
+    #work-list .work-list-detail div:nth-child(2) ul li a img{
+        width: 100%;
+    }    
+    #work-list .container .mb-25{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 541px){
+    #main .main-text .fz-45{
+        font-size: 35px;
+    }
+    .circle02{
+        width: 300px;
+        height: 300px;
+    }
+    #back-top{
+        width: 75px;
+        right: 30px;
+        bottom: 80px;
+    }
+    /* menu page */
+    .menubtn .fz-24{
+        font-size: 20px;
+    }
+    .menubtn li:nth-child(2){
+        right: 10px;
+    }
+    .menubtn li:nth-child(3){
+        top: 55px;
+        right: -18px;
+    }    
+    .app_work span.mt-15{
+        margin-top: 9px;
+    }
+    .page-detail ul{
+        padding-top: 90%;
+    }
+    .page-detail ul.fz-50{
+        font-size: 45px;
+    }
+    .page-detail ul li a{
+        margin-bottom: 0px;
+    }
+    .page-detail ul li:nth-child(2){
+        display: block;
+    }
+    .page-detail ul li:nth-child(2) a:nth-child(2){
+        margin-left: 0px;
+    }
+    .work-list-detail .w-40 ul:first-child{
+        display: none;
+    }
+    .rs_work-list-detail{
+        display: block;
+    }
+    .rs_work-list-detail li{
+        font-size: 25px;
+    }
+    .work-img{
+        display: none;
+    }
+    .work-list-tit, .rs-work-list-tit{
+        display: none;
+    }
+    .rs-work-list-tit-2{
+        display: block;
+    }
+    .work-list-detail div ul li{
+        margin-bottom: 15px;
+    }            
+    .overlay-page .pt-120{
+        padding-top: 150px;
+    }
+    .overlay-page .pb-120{
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 415px){
+    .circle01{
+        width: 160px;
+        height: 160px;
+        top: 18%;
+    }
+    .circle02{
+        width: 230px;
+        height: 230px;
+        top: 40%;
+    }
+    .fix .logo{
+        padding: 30px;
+    }
+    #main .main-text .fz-45{
+        font-size: 30px;
+    }
+    .menubtn li:nth-child(1){
+        right: -7px;
+    }
+    #back-top{
+        width: 65px;
+        right: 25px;
+    }
+    footer .container{
+        width: 90%;
+    }
+    /* menu page */
+    .page-detail ul li:first-child a section::after{
+        font-size: 35px;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+    .page-detail ul li:nth-child(2) a:nth-child(1) section::after{
+        font-size: 35px;
+        margin-top: 13px;
+        margin-left: 6px;
+    }
+    .page-detail ul li:nth-child(2) a:nth-child(2) section::after{
+        font-size: 35px;
+        margin-top: 12px;
+        margin-left: 1px;
+    }
+    .page-detail ul li:nth-child(3) a section::after{
+        font-size: 35px;
+        margin-top: 14px;
+        margin-left: 0px;
+    }
+    .page-detail ul li a span{
+        margin-left: 12px;
+    }
+    .page-detail ul li:nth-child(2) a:first-child span{
+        margin-left: 17px;
+    }
+    .rs-work-list-tit-2 .fz-30{
+        font-size: 25px;
+    }
+}
+@media (max-width: 376px){
+    #main .main-text{
+        left: 7%;
+    }
+    footer address{
+        padding: 30px 0;
+    }
+    #back-top{
+        width: 53px;
+        right: 15px;
+        bottom: 20px;
+    }
+    /* menu page */
+    .page-detail ul li a span{
+        margin-top: 29px;
+    }    
+    #main .main-text{
+        left: 9%;
+    }
+    #main .main-text .fz-45{
+        font-size: 28px;
+    }
+}
+@media (max-width: 321px){    
+    #main .main-text{
+        left: 8%;
+    }
+    #main .main-text .fz-45{
+        font-size: 22px;
+    }
+    .circle01{
+        width: 130px;
+        height: 130px;
+        top: 18%;
+    }
+    .circle02{
+        width: 180px;
+        height: 180px;
+        top: 43%;
+        right: -17%;
+    }
+    .fix .logo{
+        padding: 20px;
+    }
+    .rs-area .sec01 div, .sec02 div, .sec03 div, .sec04 div{
+        margin-top: 10px;
+    }
+    .rs-text h1{
+        margin-top: 0;
+        font-size: 35px;
+    }
+    .contact-btn button{
+        font-size: 12px;
+    }
+    footer .container{
+        width: 100%;
+    }
+    footer address p{
+        padding: 0 23px 10px;
+        font-size: 10px;
+    }
+    footer address p:last-child{
+        padding: 0 23px;
+    }
+    /* menu page */
+    .logo .fz-24{
+        font-size: 20px;
+    }
+    .page-detail ul{
+        padding-top: 120%;
+    }
+    .page-detail ul.fz-50{
+        font-size: 30px;
+    }
+    .page-detail ul li a span{
+        font-size: 15px;
+        margin-top: 14px;
+    }
+    .page-detail ul li:first-child a section::after{
+        font-size: 25px;
+        margin-top: 9px;
+        margin-left: 1px;
+    }
+    .page-detail ul li:nth-child(2) a:nth-child(1) section::after{
+        font-size: 25px;
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+    .page-detail ul li:nth-child(2) a:nth-child(2) section::after{
+        font-size: 25px;
+        margin-top: 8px;
+        margin-left: 0px;
+    }
+    .page-detail ul li:nth-child(3) a section::after{
+        font-size: 25px;
+        margin-top: 9px;
+    }
+    .menubtn .fz-24{
+        font-size: 16px;
+    }
+    .menubtn ul{
+        font-size: 16px;
+    }
+    .menubtn li:nth-child(3){
+        top: 42px;
+        right: -13px;
+    }
+    .rs-work-list-tit-2{
+        margin-bottom: 15px;
+    }
+    .rs-work-list-tit-2 p{
+        font-size: 20px;
+    }
+    .rs-work-list-tit-2 p span{
+        font-size: 20px;
+    }
+    .rs_work-list-detail li{
+        font-size: 18px;
+    }
+    .rs_work-list-detail li span.fz-16{
+        font-size: 14px;
+    }
+    #work-list .container{
+        width: 80%;
+    }
+    .ot-work a{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .app_work span.mt-15{
+        margin-top: 4px;
+    }
+    .rs-work-list-tit-2 .fz-30{
+        font-size: 22px;
+    }
+}
+/* ========== main page END ==========  */
 
-
-/* about page */
+/* ========== about page ========== */
 @media (max-width: 1025px){
     .menubtn>ul>li{
         top: 50px;
@@ -114,5 +400,342 @@
     #skills ul li:nth-child(6) .back span{
         font-size: 24px;
     }
+}
+/* ========== about page END ==========  */
 
+/* ========== 식물원 ========== */
+@media (max-width: 1025px){
+    .menubtn li:nth-child(1){
+        top: 60px;
+    }
+    .smw-tit{
+        top: 30%;
+    }
+    .smw-tit .mb-20{
+        margin-bottom: 5px;
+    }
+    .smw-tit .mt-50{
+        margin-top: 25px;
+    }
+    .smw-concept-tit p{
+        width: 75%;
+    }
+    .smw-concept-list{
+        width: 100%;
+}
+@media (max-width: 769px){
+    .concept-tit p{
+        width: 90%;
+    }
+    .smw-concept-wrap .container{
+        width: 90%;
+    }
+    .smw-concept-list{
+        flex-direction: column;
+    }
+    .smw-concept-tit p{
+        width: 90%;
+    }
+    .smw-color-wrap{
+        justify-content: center;
+    }
+    .smw-typo{
+        width: 100%;
+        margin-top: 50px;
+    }
+    #back-top{
+        width: 78px;
+        right: 30px;
+        bottom: 30px;
+    }
+}
+@media (max-width: 541px){
+    .fix .logo{
+        padding: 30px;
+    }
+    .menubtn li:nth-child(1){
+        top: 50px;
+        right: 0px;
+    }
+    .smw-header{
+        height: 500px;
+    }
+    .smw-tit{
+        top: 30%;
+    }
+    .smw-tit .mt-50{
+        margin-top: 20px;
+    }
+    .smw-tit .fz-60{
+        font-size: 50px;
+    }
+    .smw-tit .fz-25{
+        font-size: 20px;
+    }
+    .smw-viewbtn button{
+        padding: 1px 30px;
+    }
+    .smw-viewbtn .fz-20{
+        font-size: 18px;
+    }
+    .smw-page .pt-120{
+        padding-top: 80px;
+    }
+    .smw-page .pb-120{
+        padding-bottom: 80px;
+    }
+    .smw-concept-tit .fz-40, .smw-color-list .fz-40, .smw-typo .fz-40, .wireframe .fz-40{
+        font-size: 30px;
+    }
+    .smw-concept-tit p{
+        line-height: 35px;
+        font-size: 16px;
+    }
+    .smw-color-wrap div p.fz-20{        
+        font-size: 16px;
+    }
+    .smw-typo-wrap .fz-20{
+        font-size: 18px;
+    }
+    #back-top{
+        width: 70px;
+        right: 20px;
+        bottom: 30px;
+    }
+}
+@media (max-width: 415px){
+    .menubtn .fz-24{
+        font-size: 20px;
+    }
+    .menubtn li:nth-child(1){
+        top: 40px;
+        right: -3px;
+    }
+    .smw-header{
+        height: 455px;
+    }
+    .smw-tit{
+        top: 30%;
+        right: 15%;
+    }
+    .smw-tit .fz-60{
+        font-size: 45px;
+    }
+    .smw-tit .fz-24{
+        font-size: 22px;
+    }
+    .smw-tit .fz-25{
+        font-size: 18px;
+    }
+    .smw-page .pt-120{
+        padding-top: 60px;
+    }
+    .smw-page .pb-120{
+        padding-bottom: 60px;
+    }
+    .smw-concept-tit p{
+        line-height: 30px;
+        font-size: 15px;
+        width: 90%;
+    }
+    .smw-color-wrap div{
+        margin-right: 10px;
+    }
+    .smw-color01, .smw-color02, .smw-color03{
+        height: 115px;
+    }
+    .smw-color-wrap div p.fz-20{
+        font-size: 15px;
+    }
+    .smw-concept-tit .fz-40, .smw-color-list .fz-40, .smw-typo .fz-40, .wireframe .fz-40{
+        font-size: 28px;
+    }
+    footer address.fz-14{
+        font-size: 12px;
+    }
+}
+@media (max-width: 376px){
+    .fix .logo{
+        padding: 25px;
+    }
+    .smw-tit{
+        top: 30%;
+        right: 10%;
+    }
+    .smw-color01, .smw-color02, .smw-color03{
+        height: 110px;
+    }
+    .smw-tit .fz-60{
+        font-size: 40px;
+    }
+    .smw-concept-tit p{
+        width: 90%;
+    }
+    .smw-typo-wrap .fz-20{
+        font-size: 17px;
+    }
+}
+@media (max-width: 361px){
+    .smw-concept-tit p{
+        width: 95%;
+    }
+    .smw-color01, .smw-color02, .smw-color03{
+        height: 103px;
+    }
+}
+@media (max-width: 321px){
+    .smw-header{
+        height: 400px;
+    }
+    .smw-tit{
+        right: 7%;
+    }
+    .smw-tit .fz-60{
+        font-size: 35px;
+    }
+    .smw-tit .fz-25{
+        font-size: 16px;
+    }
+    .smw-concept-tit .fz-40, .smw-color-list .fz-40, .smw-typo .fz-40, .wireframe .fz-40{
+        font-size: 25px;
+    }
+    .smw-concept-tit p{
+        width: 96%;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .smw-color01, .smw-color02, .smw-color03{
+        height: 95px;
+    }
+    .smw-typo-wrap .fz-20{
+        font-size: 16px;
+    }
+    #back-top{
+        width: 60px;
+        right: 12px;
+        bottom: 17px;
+    }
+}
+@media (max-width: 281px){
+    .smw-header{
+        height: 390px;
+    }
+    .smw-tit .fz-24{
+        font-size: 20px;
+    }
+    .smw-tit .fz-60{
+        font-size: 30px;
+    }
+    .smw-tit .fz-25{
+        font-size: 15px;
+    }
+    .smw-concept-tit .fz-40, .smw-color-list .fz-40, .smw-typo .fz-40, .wireframe .fz-40{
+        font-size: 23px;
+    }
+    .smw-concept-tit p{
+        width: 100%;
+        line-height: 22px;
+        font-size: 12px;
+    }
+    .smw-concept-tit .mt-20{
+        margin-top: 10px;
+    }
+    .smw-color-wrap div{
+        margin-right: 5px;
+    }
+    .smw-color01, .smw-color02, .smw-color03{
+        height: 85px;
+    }
+    .smw-color-wrap div p.fz-20{
+        font-size: 12px;
+    }
+    .smw-concept-wrap .mt-50{
+        margin-top: 30px;
+    }
+    .smw-typo{
+        margin-top: 30px;
+    }
+    .smw-typo .mt-20{
+        margin-top: 10px;
+    }
+    .smw-typo-wrap .fz-20{
+        font-size: 14px;
+        line-height: 15px;
+    }
+}
+/* ========== 식물원 END ========== */
+ 
+
+/* ========== 경복궁 ========== */
+@media (max-width: 1025px){
+    .royal-header{
+        height: 1000px;
+    }
+    .royal-macbook{
+        padding: 55% 0 0 0;
+        max-width: none;
+    }
+    .royal-tit{
+        top: 15%;
+        right: 35%;
+        text-align: center;
+    }
+    .royal-concept-wrap .royal-concept-tit p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .royal-concept-wrap .container .d-flex{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 769px){
+    .royal-header{
+        height: 900px;
+    }
+    .royal-tit{
+        top: 17%;
+    }
+    .macbook{
+        padding: 75% 0 0 0;
+    }
+    .royal-concept-wrap div .concept-tit p{
+        width: 90%;
+    }
+    .royal-concept-wrap .container .d-flex{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mr-150 .d-flex{
+        flex-direction: row !important;
+    }
+    .royal-typo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media (max-width: 541px){
+    .royal-header{
+        height: 680px;
+    }
+    .royal-tit{
+        top: 18%;
+        right: 26%;
+    }
+    .macbook{
+        padding: 85% 0 0 0;
+    }
+    .mb-20{
+        margin-bottom: 10px;
+    }
+    .color01, .color02, .color03{
+        height: 130px;
+    }
+    .typo .fz-40{
+        font-size: 30px !important;
+    }
+    .royal-fonttype{
+        -webkit-text-stroke: 0.1px #333;
+    }
 }

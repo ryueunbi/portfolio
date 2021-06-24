@@ -35,7 +35,9 @@
 .w-70{
     width: 70%;
 }
-
+.w-80{
+    width: 80%;
+}
 /* margin top */
 .mt-5{
     margin-top: 5px;
@@ -74,6 +76,9 @@
 }
 .mb-20{
     margin-bottom: 20px;
+}
+.mb-25{
+    margin-bottom: 25px;
 }
 .mb-30{
     margin-bottom: 30px;

@@ -1,22 +1,21 @@
-.smw-header{
+.royal-header{
     width: 100%;
     height: 600px;
-    /* background: url('../images/sik_header.png'); */
     position: relative;
 }
-.macbook{
-    padding: 7% 6%;
-    max-width: 800px;
+.royal-macbook{
+    padding-top: 7%;
+    max-width: 920px;
+    padding-left: 10%;
 }
-.screen{
+.royal-macbook .screen{
     background: #000;
     border-radius: 3% 3% 0.5% 0.5% / 5%;
     margin: 0 auto;
-    /* for aspect ratio */
     position: relative;
     width: 80%;
 }
-.screen:before{
+.royal-macbook .screen:before{
     border: 2px solid #cacacc;
     border-radius: 3% 3% 0.5% 0.5% / 5%;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8) inset,
@@ -26,7 +25,7 @@
     /* for aspect ratio ~67:100 */
     padding-top: 67%;
 }
-.screen:after{
+.royal-macbook .screen:after{
     content: "";
     border-top: 2px solid rgba(255, 255, 255, 0.15);
     position: absolute;
@@ -35,7 +34,7 @@
     padding-top: 1%;
     width: 99%;
 }
-.viewport{
+.royal-macbook .viewport{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -44,12 +43,11 @@
     margin: 4.3% 3.2%;
     background: #333;
 }
-.base{
-    /* for aspect ratio */
+.royal-macbook .base{
     position: relative;
     width: 100%;
 }
-.base:before{
+.royal-macbook .base:before{
     content: "";
     display: block;
     /* for aspect ratio ~33:1000*/
@@ -67,7 +65,7 @@
         );
     border-radius: 0 0 10% 10%/ 0 0 50% 50%;
 }
-.base::after{
+.royal-macbook .base::after{
     background: linear-gradient(90deg,
     rgba(0, 0, 0, 0.5),
     rgba(255, 255, 255, 0.8) 0.5%,
@@ -82,7 +80,7 @@
     top: 0;
     width: 100%;
 }
-.notch{
+.royal-macbook .notch{
     background: #ddd;
     border-radius: 0 0 7% 7% / 0 0 95% 95%;
     box-shadow: -5px -1px 3px rgba(0, 0, 0, 0.2) inset, 5px -1px 3px rgba(0, 0, 0, 0.2) inset;
@@ -94,7 +92,7 @@
     position: relative;
     width: 14%;
 }
-.notch:before{
+.royal-macbook .notch:before{
     content: "";
     display: block;
     /* for aspect ratio ~1:10 */
@@ -103,17 +101,17 @@
 
 /* Screenshot Hover Scroll Additions
 -------------------------------------------------------------- */
-.macbook .viewport {
+.royal-macbook .viewport{
     transition: background-position 3s ease;
     background-position: 0 0;
     background-size: 100% auto;
     overflow: hidden;
     cursor: pointer;
 }
-.macbook:hover .viewport{
+.royal-macbook:hover .viewport{
     background-position: 0 100%;
 }
-.macbook .viewport:after{
+.royal-macbook .viewport:after{
     background: radial-gradient(circle at right bottom, transparent 75%, rgba(255, 255, 255, 0.05) 75%, transparent);
     bottom: 0;
     content: "";
@@ -122,48 +120,60 @@
     right: 0;
     top: 0;
 }
-.smw-tit{
+.royal-tit{
     position: absolute;
-    top: 20%;
+    top: 27%;
     right: 20%;
 }
-.smw-tit h3{
+.royal-tit h3{
     font-weight: 500;
 }
-.viewbtn button{
+.rs-monitor{
+    display: none;
+}
+.royal-viewbtn button{
     border-radius: 0;
     border: 1px solid #f9d81b;
     background: #fff;
     padding: 3px 30px;
     transition: all .3s;
 }
-.viewbtn button:hover{
+.royal-viewbtn button:hover{
     border: 1px solid #f9d81b;
     color: #333;
     background: #f9d81b;
 }
-.concept-wrap{
+.royal-concept-wrap{
     width: 100%;
     background: #f6f6f6;
 }
-.color-wrap div{
-    margin-right: 20px;
+.royal-concept{
+    justify-content: space-between;
+    margin: 50px auto 0;
+}
+.royal-color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.royal-color-wrap div{
     position: relative;
 }
-.color-wrap div p{
+.royal-color-wrap div p{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 500;
 }
-.color01{
+.royal-color01{
     width: 150px;
     height: 150px;
     background: #e1ca57;
     border-radius: 100%;
+    margin-right: 20px;
 }
-.color02{
+.royal-color02{
     width: 150px;
     height: 150px;
     background: #323650;
@@ -171,45 +181,41 @@
     border-radius: 100%;
     color: #fff;
 }
-.color03{
-    width: 150px;
-    height: 150px;
-    background: #ec654f;
-    border-radius: 100%;
+.royal-typo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
 }
-.concept-wrap .w-60{
-    margin: 0 auto;
-}
-.concept-wrap div .concept-tit{
+.royal-concept-wrap div .concept-tit{
     flex-direction: column;
 }
-.concept-wrap div .concept-tit p{
-    line-height: 30px;
+.royal-concept-wrap div.concept-tit p{
+    line-height: 40px;
     font-weight: 400;
 }
-.fonttype{
+.royal-fonttype{
     font-family: 'EBSHMJESaeronRA';
     font-weight: 600;
     color: transparent;
     text-stroke: 0.1px #333;
     -webkit-text-stroke: 0.1px #333;
 }
-.fonttype2{
+.royal-fonttype2{
     font-weight: 600;
     color: transparent;
     text-stroke: 1px #333;
     -webkit-text-stroke: 1px #333;
 }
-.typo-wrap ul li{
+.royal-typo-wrap ul li{
     margin-bottom: 10px;
 }
-.typo-wrap ul li:first-child{
+.royal-typo-wrap ul li:first-child{
     font-weight: lighter;
 }
-.typo-wrap ul li:nth-child(2){
+.royal-typo-wrap ul li:nth-child(2){
     font-weight: normal;
 }
-.typo-wrap ul li:last-child{
+.royal-typo-wrap ul li:last-child{
     font-weight: bold;
 }
 .wireframe-img img{

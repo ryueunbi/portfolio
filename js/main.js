@@ -188,7 +188,7 @@
 // scroll up
   $(window).on('scroll', function () {
     var scroll = $(window).scrollTop();
-    if(scroll < 30) {
+    if(scroll < 100) {
       $('#back-top a img').attr('src','images/topbtn.png');
     }
     else if (scroll < 400) {

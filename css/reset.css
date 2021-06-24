@@ -49,13 +49,14 @@ input,select,textarea{
     font-weight: inherit;
 }
 input,select,textarea{
-    *font-size:100%
+    *font-size: 100%;
 }
 legend{
     color: #000;
 }
 body{
     /* cursor: none; */
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;

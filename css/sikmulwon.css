@@ -1,104 +1,109 @@
+.smw-wrap{
+    width: 100%;
+    margin: 0 auto;
+}
 .smw-header{
     width: 100%;
     height: 600px;
-    background: url('../images/sik_header.png');
+    background: url('../images/sik_header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
 }
 .smw-tit{
-    z-index: 4;
+    position: absolute;
+    top: 20%;
+    right: 20%;
 }
 .smw-tit h3{
     font-weight: 500;
 }
-.viewbtn button{
+.smw-viewbtn button{
     border-radius: 0;
     border: 1px solid #f9d81b;
     background: #fff;
     padding: 3px 30px;
     transition: all .3s;
 }
-.viewbtn button:hover{
+.smw-viewbtn button:hover{
     border: 1px solid #f9d81b;
     color: #333;
     background: #f9d81b;
 }
-.smw-video{
-    position: absolute;
-    top: 75.2px;
-    right: 228px;
-    z-index: 2;
-}
-.smw-video video{
-    width: 45.3%;
-}
-.video-top{
-    position: absolute;
-    top: 0;
-    z-index: 3;
-}
-.video-top img{
-    width: 100%;
-}
-.concept-wrap{
+.smw-concept-wrap{
     width: 100%;
     background: #f6f6f6;
 }
-.color-wrap div{
+.smw-concept-list{
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px auto 0;
+}
+.smw-color-list{
+    text-align: center;
+}
+.smw-color-wrap div{
     margin-right: 20px;
     position: relative;
 }
-.color-wrap div p{
+.smw-color-wrap div:last-child{
+    margin-right: 0;
+}
+.smw-color-wrap div p{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 500;
 }
-.color01{
+.smw-color01{
     width: 150px;
     height: 150px;
     background: #13805d;
     border-radius: 100%;
 }
-.color02{
+.smw-color02{
     width: 150px;
     height: 150px;
     background: #fff;
     border: 1px solid #19191996;
     border-radius: 100%;
 }
-.color03{
+.smw-color03{
     width: 150px;
     height: 150px;
     background: #ec654f;
     border-radius: 100%;
 }
-.concept-wrap .w-60{
-    margin: 0 auto;
-}
-.concept-wrap div .concept-tit{
+.smw-concept-tit{
     flex-direction: column;
 }
-.concept-wrap div .concept-tit p{
-    line-height: 30px;
+.smw-concept-tit p{
+    line-height: 40px;
     font-weight: 400;
 }
-.fonttype{
+.smw-typo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.smw-fonttype{
     font-weight: 600;
     color: transparent;
     text-stroke: 1px #333;
     -webkit-text-stroke: 1px #333;
 }
-.typo-wrap ul li{
+.smw-typo-wrap ul li{
     margin-bottom: 10px;
 }
-.typo-wrap ul li:first-child{
+.smw-typo-wrap ul li:first-child{
     font-weight: lighter;
 }
-.typo-wrap ul li:nth-child(2){
+.smw-typo-wrap ul li:nth-child(2){
     font-weight: normal;
 }
-.typo-wrap ul li:last-child{
+.smw-typo-wrap ul li:last-child{
     font-weight: bold;
 }
 .wireframe-img img{
