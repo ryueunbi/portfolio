@@ -1,22 +1,21 @@
-.smw-header{
+.jeju-header{
     width: 100%;
     height: 600px;
-    /* background: url('../images/sik_header_mac.png'); */
     position: relative;
 }
-.macbook{
-    padding: 7% 6%;
-    max-width: 800px;
+.jeju-macbook{
+    padding-top: 7%;
+    max-width: 920px;
+    padding-left: 10%;
 }
-.screen{
+.jeju-macbook .screen{
     background: #000;
     border-radius: 3% 3% 0.5% 0.5% / 5%;
     margin: 0 auto;
-    /* for aspect ratio */
     position: relative;
     width: 80%;
 }
-.screen:before{
+.jeju-macbook .screen:before{
     border: 2px solid #cacacc;
     border-radius: 3% 3% 0.5% 0.5% / 5%;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8) inset,
@@ -26,7 +25,7 @@
     /* for aspect ratio ~67:100 */
     padding-top: 67%;
 }
-.screen:after{
+.jeju-macbook .screen:after{
     content: "";
     border-top: 2px solid rgba(255, 255, 255, 0.15);
     position: absolute;
@@ -35,7 +34,7 @@
     padding-top: 1%;
     width: 99%;
 }
-.viewport{
+.jeju-macbook .viewport{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -44,12 +43,11 @@
     margin: 4.3% 3.2%;
     background: #333;
 }
-.base{
-    /* for aspect ratio */
+.jeju-macbook .base{
     position: relative;
     width: 100%;
 }
-.base:before{
+.jeju-macbook .base:before{
     content: "";
     display: block;
     /* for aspect ratio ~33:1000*/
@@ -67,7 +65,7 @@
         );
     border-radius: 0 0 10% 10%/ 0 0 50% 50%;
 }
-.base::after{
+.jeju-macbook .base::after{
     background: linear-gradient(90deg,
     rgba(0, 0, 0, 0.5),
     rgba(255, 255, 255, 0.8) 0.5%,
@@ -82,7 +80,7 @@
     top: 0;
     width: 100%;
 }
-.notch{
+.jeju-macbook .notch{
     background: #ddd;
     border-radius: 0 0 7% 7% / 0 0 95% 95%;
     box-shadow: -5px -1px 3px rgba(0, 0, 0, 0.2) inset, 5px -1px 3px rgba(0, 0, 0, 0.2) inset;
@@ -94,7 +92,7 @@
     position: relative;
     width: 14%;
 }
-.notch:before{
+.jeju-macbook .notch:before{
     content: "";
     display: block;
     /* for aspect ratio ~1:10 */
@@ -103,17 +101,17 @@
 
 /* Screenshot Hover Scroll Additions
 -------------------------------------------------------------- */
-.macbook .viewport {
+.jeju-macbook .viewport {
     transition: background-position 3s ease;
     background-position: 0 0;
     background-size: 100% auto;
     overflow: hidden;
     cursor: pointer;
 }
-.macbook:hover .viewport{
+.jeju-macbook:hover .viewport{
     background-position: 0 100%;
 }
-.macbook .viewport:after{
+.jeju-macbook .viewport:after{
     background: radial-gradient(circle at right bottom, transparent 75%, rgba(255, 255, 255, 0.05) 75%, transparent);
     bottom: 0;
     content: "";
@@ -122,96 +120,37 @@
     right: 0;
     top: 0;
 }
-.smw-tit{
+.jeju-tit{
     position: absolute;
-    top: 20%;
-    right: 20%;
+    top: 27%;
+    right: 15.7%;
 }
-.smw-tit h3{
+.jeju-tit h3{
     font-weight: 500;
 }
-.viewbtn button{
+.rs-monitor{
+    display: none;
+}
+.jeju-viewbtn button{
     border-radius: 0;
     border: 1px solid #f9d81b;
     background: #fff;
     padding: 3px 30px;
     transition: all .3s;
 }
-.viewbtn button:hover{
+.jeju-viewbtn button:hover{
     border: 1px solid #f9d81b;
     color: #333;
     background: #f9d81b;
 }
-.concept-wrap{
+.jeju-concept-wrap{
     width: 100%;
     background: #f6f6f6;
 }
-.color-wrap div{
-    margin-right: 20px;
-    position: relative;
-}
-.color-wrap div p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 500;
-}
-.color01{
-    width: 150px;
-    height: 150px;
-    background: #699851;
-    border-radius: 100%;
-}
-.color02{
-    width: 150px;
-    height: 150px;
-    background: #fff;
-    border: 1px solid #323650;
-    border-radius: 100%;
-    color: #333;
-}
-.color03{
-    width: 150px;
-    height: 150px;
-    background: #ec654f;
-    border-radius: 100%;
-}
-.concept-wrap .w-60{
-    margin: 0 auto;
-}
-.concept-wrap div .concept-tit{
+.jeju-concept-tit{
     flex-direction: column;
 }
-.concept-wrap div .concept-tit p{
-    line-height: 30px;
+.jeju-concept-tit p{
+    line-height: 40px;
     font-weight: 400;
-}
-.fonttype{
-    font-family: 'Cafe24Oneprettynight';
-    font-weight: 600;
-    color: transparent;
-    text-stroke: 0.1px #333;
-    -webkit-text-stroke: 0.1px #333;
-}
-.fonttype2{
-    font-weight: 600;
-    color: transparent;
-    text-stroke: 0.1px #333;
-    -webkit-text-stroke: 0.1px #333;
-}
-.typo-wrap ul li{
-    margin-bottom: 10px;
-}
-.typo-wrap ul li:first-child{
-    font-weight: lighter;
-}
-.typo-wrap ul li:nth-child(2){
-    font-weight: normal;
-}
-.typo-wrap ul li:last-child{
-    font-weight: bold;
-}
-.wireframe-img img{
-    width: 100%;
 }

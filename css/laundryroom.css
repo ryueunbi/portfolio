@@ -3,19 +3,19 @@
     height: 600px;
     position: relative;
 }
-.macbook{
-    padding: 7% 6%;
-    max-width: 800px;
+.laundry-macbook{
+    padding-top: 7%;
+    max-width: 920px;
+    padding-left: 10%;
 }
-.screen{
+.laundry-macbook .screen{
     background: #000;
     border-radius: 3% 3% 0.5% 0.5% / 5%;
     margin: 0 auto;
-    /* for aspect ratio */
     position: relative;
     width: 80%;
 }
-.screen:before{
+.laundry-macbook .screen:before{
     border: 2px solid #cacacc;
     border-radius: 3% 3% 0.5% 0.5% / 5%;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8) inset,
@@ -25,7 +25,7 @@
     /* for aspect ratio ~67:100 */
     padding-top: 67%;
 }
-.screen:after{
+.laundry-macbook .screen:after{
     content: "";
     border-top: 2px solid rgba(255, 255, 255, 0.15);
     position: absolute;
@@ -34,7 +34,7 @@
     padding-top: 1%;
     width: 99%;
 }
-.viewport{
+.laundry-macbook .viewport{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -43,12 +43,11 @@
     margin: 4.3% 3.2%;
     background: #333;
 }
-.base{
-    /* for aspect ratio */
+.laundry-macbook .base{
     position: relative;
     width: 100%;
 }
-.base:before{
+.laundry-macbook .base:before{
     content: "";
     display: block;
     /* for aspect ratio ~33:1000*/
@@ -66,7 +65,7 @@
         );
     border-radius: 0 0 10% 10%/ 0 0 50% 50%;
 }
-.base::after{
+.laundry-macbook .base::after{
     background: linear-gradient(90deg,
     rgba(0, 0, 0, 0.5),
     rgba(255, 255, 255, 0.8) 0.5%,
@@ -81,7 +80,7 @@
     top: 0;
     width: 100%;
 }
-.notch{
+.laundry-macbook .notch{
     background: #ddd;
     border-radius: 0 0 7% 7% / 0 0 95% 95%;
     box-shadow: -5px -1px 3px rgba(0, 0, 0, 0.2) inset, 5px -1px 3px rgba(0, 0, 0, 0.2) inset;
@@ -93,7 +92,7 @@
     position: relative;
     width: 14%;
 }
-.notch:before{
+.laundry-macbook .notch:before{
     content: "";
     display: block;
     /* for aspect ratio ~1:10 */
@@ -102,17 +101,17 @@
 
 /* Screenshot Hover Scroll Additions
 -------------------------------------------------------------- */
-.macbook .viewport {
+.laundry-macbook .viewport {
     transition: background-position 3s ease;
     background-position: 0 0;
     background-size: 100% auto;
     overflow: hidden;
     cursor: pointer;
 }
-.macbook:hover .viewport{
+.laundry-macbook:hover .viewport{
     background-position: 0 100%;
 }
-.macbook .viewport:after{
+.laundry-macbook .viewport:after{
     background: radial-gradient(circle at right bottom, transparent 75%, rgba(255, 255, 255, 0.05) 75%, transparent);
     bottom: 0;
     content: "";
@@ -123,20 +122,23 @@
 }
 .laundry-tit{
     position: absolute;
-    top: 20%;
-    right: 19.2%;
+    top: 27%;
+    right: 19.3%;
 }
 .laundry-tit h3{
     font-weight: 500;
 }
-.viewbtn button{
+.rs-monitor{
+    display: none;
+}
+.laundry-viewbtn button{
     border-radius: 0;
     border: 1px solid #f9d81b;
     background: #fff;
     padding: 3px 30px;
     transition: all .3s;
 }
-.viewbtn button:hover{
+.laundry-viewbtn button:hover{
     border: 1px solid #f9d81b;
     color: #333;
     background: #f9d81b;
@@ -155,7 +157,7 @@
     transform: translate(-50%, -50%);
     font-weight: 500;
 }
-.color01{
+.laundry-color01{
     width: 150px;
     height: 150px;
     background: #2c4d9c;
@@ -163,11 +165,10 @@
     color: #fff;
     margin-right: 20px;
 }
-.color02{
+.laundry-color02{
     width: 150px;
     height: 150px;
     background: #eb5a79;
-    /* border: 1px solid #323650; */
     border-radius: 100%;
     color: #fff;
 }
@@ -175,18 +176,18 @@
     justify-content: space-between;
 }
 .laundry-concept-wrap .w-60{
-    margin: 0 auto;
+    margin: 50px auto 0;
 }
 .laundry-concept-wrap div .concept-tit{
     flex-direction: column;
 }
-.laundry-concept-wrap div .concept-tit p{
+.laundry-concept-tit p{
     line-height: 40px;
     font-weight: 400;
 }
 .laundry-fonttype{
     font-family: 'NanumSquare';
-    font-weight: 400;
+    font-weight: 900;
     color: transparent;
     text-stroke: 1px #333;
     -webkit-text-stroke: 1px #333;

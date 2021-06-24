@@ -260,16 +260,6 @@
     .contact-btn button{
         font-size: 12px;
     }
-    footer .container{
-        width: 100%;
-    }
-    footer address p{
-        padding: 0 23px 10px;
-        font-size: 10px;
-    }
-    footer address p:last-child{
-        padding: 0 23px;
-    }
     /* menu page */
     .logo .fz-24{
         font-size: 20px;
@@ -422,6 +412,7 @@
     }
     .smw-concept-list{
         width: 100%;
+    }
 }
 @media (max-width: 769px){
     .concept-tit p{
@@ -502,6 +493,9 @@
         right: 20px;
         bottom: 30px;
     }
+    footer .fz-16{
+        font-size: 14px;
+    }
 }
 @media (max-width: 415px){
     .menubtn .fz-24{
@@ -573,6 +567,10 @@
     }
     .smw-typo-wrap .fz-20{
         font-size: 17px;
+    }
+    footer .fz-16{
+        font-size: 12px;
+        letter-spacing: -1px;
     }
 }
 @media (max-width: 361px){
@@ -677,65 +675,569 @@
     }
     .royal-tit{
         top: 15%;
-        right: 35%;
+        right: 40%;
         text-align: center;
     }
-    .royal-concept-wrap .royal-concept-tit p{
-        width: 80%;
-        margin: 0 auto;
+    .royal-tit .mb-20{
+        margin-bottom: 5px;
     }
-    .royal-concept-wrap .container .d-flex{
+    .royal-tit .mt-50{
+        margin-top: 25px;
+    }
+    .royal-concept-tit p{
+        width: 80%;
+        margin: 20px auto 0;
+    }
+    .royal-concept{
         width: 100%;
         justify-content: space-between;
+    }
+    .monitor{
+        display: none;
+    }
+    .rs-monitor{
+        display: block;
     }
 }
 @media (max-width: 769px){
     .royal-header{
         height: 900px;
     }
-    .royal-tit{
-        top: 17%;
-    }
-    .macbook{
+    .royal-macbook{
         padding: 75% 0 0 0;
     }
-    .royal-concept-wrap div .concept-tit p{
-        width: 90%;
+    .royal-tit{
+        top: 17%;
+        right: 37%;
     }
-    .royal-concept-wrap .container .d-flex{
+    .royal-concept-tit p{
+        width: 95%;
+    }
+    .royal-concept{
         justify-content: center;
         flex-direction: column;
     }
-    .mr-150 .d-flex{
-        flex-direction: row !important;
-    }
     .royal-typo{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        margin-top: 50px;
     }
 }
 @media (max-width: 541px){
     .royal-header{
-        height: 680px;
+        height: 650px;
+    }
+    .royal-macbook{
+        padding: 82% 0 0 0;
     }
     .royal-tit{
         top: 18%;
-        right: 26%;
+        right: 32%;
     }
-    .macbook{
-        padding: 85% 0 0 0;
+    .royal-tit .fz-60{
+        font-size: 50px;
     }
-    .mb-20{
-        margin-bottom: 10px;
+    .royal-tit .fz-25{
+        font-size: 20px;
     }
-    .color01, .color02, .color03{
-        height: 130px;
+    .royal-viewbtn button{
+        padding: 1px 30px;
     }
-    .typo .fz-40{
-        font-size: 30px !important;
+    .royal-viewbtn .fz-20{
+        font-size: 18px;
     }
-    .royal-fonttype{
-        -webkit-text-stroke: 0.1px #333;
+    .royal-page .pt-120{
+        padding-top: 80px;
+    }
+    .royal-page .pb-120{
+        padding-bottom: 80px;
+    }
+    .royal-concept-tit .fz-40, .royal-color .fz-40, .royal-typo .fz-40{
+        font-size: 30px;
+    }
+    .royal-concept-tit p{
+        line-height: 35px;
+        font-size: 16px;
+    }
+    .royal-color-wrap{
+        flex-direction: row;
+    }
+    .royal-color-wrap div p.fz-20{        
+        font-size: 16px;
+    }
+    .royal-typo-wrap .fz-20{
+        font-size: 18px;
+    }
+    .royal-typo{
+        margin-top: 50px;
     }
 }
+@media (max-width: 415px){
+    .royal-header{
+        height: 550px;
+    }
+    .royal-macbook{
+        padding: 96% 0 0 0;
+    }
+    .royal-tit{
+        right: 27%;
+    }
+    .royal-tit .fz-60{
+        font-size: 45px;
+    }
+    .royal-tit .fz-24{
+        font-size: 22px;
+    }
+    .royal-tit .fz-25{
+        font-size: 18px;
+    }
+    .royal-page .pt-120{
+        padding-top: 60px;
+    }
+    .royal-page .pb-120{
+        padding-bottom: 60px;
+    }
+    .royal-concept-tit p{
+        line-height: 30px;
+        font-size: 15px;
+        width: 97%;
+    }
+    .royal-color01{
+        margin-right: 10px;
+    }
+    .royal-color-wrap div p.fz-20{
+        font-size: 15px;
+    }
+    .royal-concept-tit .fz-40, .royal-color .fz-40, .royal-typo .fz-40{
+        font-size: 28px;
+    }
+}
+@media (max-width: 376px){
+    .royal-concept-wrap .container{
+        width: 95%;
+    }
+    .royal-tit{
+        top: 21%;
+        right: 27%;
+    }
+    .royal-header{
+        height: 515px;
+    }
+    .royal-macbook{
+        padding: 100% 0 0 0;
+    }
+    .royal-tit .fz-60{
+        font-size: 40px;
+    }
+    .royal-tit .mt-50{
+        margin-top: 20px;
+    }
+    .royal-concept-tit p{
+        width: 90%;
+    }
+    .royal-typo-wrap .fz-20{
+        font-size: 17px;
+    }
+}
+@media (max-width: 361px){
+    .royal-page .container{
+        width: 90%;
+    }
+    .royal-header{
+        height: 555px;
+    }
+    .royal-tit{
+        top: 22%;
+    }
+    .royal-page .container{
+        width: 95%;
+    }
+    .royal-concept-tit p{
+        width: 100%;
+    }
+}
+@media (max-width: 321px){
+    .royal-header{
+        height: 520px;
+    }
+    .royal-macbook{
+        padding: 110% 0 0 0;
+    }
+    .royal-tit{
+        top: 24%;
+    }
+    .royal-tit .fz-60{
+        font-size: 35px;
+    }
+    .royal-tit .fz-25{
+        font-size: 16px;
+    }
+    .royal-concept-tit .fz-40, .royal-color-list .fz-40, .royal-typo .fz-40{
+        font-size: 25px;
+    }
+    .royal-page .container{
+        width: 90%;
+    }
+    .royal-concept-tit p{
+        width: 100%;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .royal-color01, .royal-color02{
+        width: 130px;
+        height: 130px;
+    }
+    .royal-typo-wrap .fz-20{
+        font-size: 16px;
+    }
+    .royal-concept-tit .mt-20, .royal-color .mt-20, .wireframe-img{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 281px){
+    .royal-page .container{
+        width: 95%;
+    }
+    .royal-header{
+        height: 460px;
+    }
+    .royal-macbook{
+        padding: 105% 0 0 0;
+    }
+    .royal-tit{
+        top: 24%;
+        right: 25%;
+    }
+    .royal-tit .fz-24{
+        font-size: 20px;
+    }
+    .royal-tit .fz-60{
+        font-size: 30px;
+    }
+    .royal-tit .fz-25{
+        font-size: 15px;
+    }
+    .royal-viewbtn .fz-20{
+        font-size: 15px;
+    }
+    .royal-tit .mt-50{
+        margin-top: 15px;
+    }
+    .royal-concept-tit .fz-40, .royal-color .fz-40, .royal-typo .fz-40{
+        font-size: 23px;
+    }
+    .royal-concept-tit p{
+        width: 95%;
+        line-height: 22px;
+        font-size: 12px;
+    }
+    .royal-color01, .royal-color02{
+        width: 100px;
+        height: 100px;
+    }
+    .royal-color-wrap div p.fz-20{
+        font-size: 12px;
+    }
+    .royal-concept-wrap .mt-50{
+        margin-top: 30px;
+    }
+    .royal-typo{
+        margin-top: 30px;
+    }
+    .royal-typo-wrap .fz-20{
+        font-size: 14px;
+        line-height: 15px;
+    }
+}
+/* ========== 경복궁 END ========== */
+ 
+
+/* ========== 런드리룸 ========== */
+@media (max-width: 1025px){
+    .laundry-header{
+        height: 1000px;
+    }
+    .laundry-macbook{
+        padding: 55% 0 0 0;
+        max-width: none;
+    }
+    .laundry-tit{
+        top: 15%;
+        right: 36.5%;
+        text-align: center;
+    }
+    .laundry-tit .mb-20{
+        margin-bottom: 5px;
+    }
+    .laundry-tit .mt-50{
+        margin-top: 25px;
+    }
+    .laundry-concept-tit p{
+        width: 80%;
+        margin: 20px auto 0;
+    }
+    .laundry-concept{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 769px){
+    .laundry-header{
+        height: 900px;
+    }
+    .laundry-macbook{
+        padding: 75% 0 0 0;
+    }
+    .laundry-tit{
+        top: 17%;
+        right: 32.6%;
+    }
+    .laundry-concept-tit p{
+        width: 100%;
+        letter-spacing: -1.5px;
+    }
+    .laundry-concept{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .laundry-color-wrap{
+        justify-content: center;
+    }
+    .laundry-typo{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 541px){
+    .laundry-header{
+        height: 650px;
+    }
+    .laundry-macbook{
+        padding: 82% 0 0 0;
+    }
+    .laundry-tit{
+        top: 18%;
+        right: 28.8%;
+    }
+    .laundry-tit .fz-60{
+        font-size: 50px;
+    }
+    .laundry-tit .fz-25{
+        font-size: 20px;
+    }
+    .laundry-viewbtn button{
+        padding: 1px 30px;
+    }
+    .laundry-viewbtn .fz-20{
+        font-size: 18px;
+    }
+    .laundry-concept-wrap .container{
+        width: 90%;
+    }
+    .laundry-concept-tit p{
+        width: 100%;
+    }
+    .laundry-page .pt-120{
+        padding-top: 80px;
+    }
+    .laundry-page .pb-120{
+        padding-bottom: 80px;
+    }
+    .laundry-concept-tit .fz-40, .laundry-color .fz-40, .laundry-typo .fz-40{
+        font-size: 30px;
+    }
+    .laundry-concept-tit p{
+        line-height: 35px;
+        font-size: 16px;
+    }
+    .laundry-color-wrap div p.fz-20{        
+        font-size: 16px;
+    }
+    .laundry-typo-wrap .fz-20{
+        font-size: 18px;
+    }
+}
+@media (max-width: 415px){
+    .laundry-header{
+        height: 550px;
+    }
+    .laundry-macbook{
+        padding: 96% 0 0 0;
+    }
+    .laundry-tit{
+        right: 23.8%;
+    }
+    .laundry-tit .fz-60{
+        font-size: 45px;
+    }
+    .laundry-tit .fz-24{
+        font-size: 22px;
+    }
+    .laundry-tit .fz-25{
+        font-size: 18px;
+    }
+    .laundry-page .pt-120{
+        padding-top: 60px;
+    }
+    .laundry-page .pb-120{
+        padding-bottom: 60px;
+    }
+    .laundry-concept-tit p{
+        line-height: 30px;
+        font-size: 15px;
+        width: 90%;
+    }
+    .laundry-color01{
+        margin-right: 10px;
+    }
+    .laundry-color-wrap div p.fz-20{
+        font-size: 15px;
+    }
+    .laundry-concept-tit .fz-40, .laundry-color .fz-40, .laundry-typo .fz-40{
+        font-size: 28px;
+    }
+}
+@media (max-width: 376px){
+    .laundry-concept-wrap .container{
+        width: 95%;
+    }
+    .laundry-tit{
+        top: 21%;
+        right: 26.5%;
+    }
+    .laundry-header{
+        height: 515px;
+    }
+    .laundry-macbook{
+        padding: 100% 0 0 0;
+    }
+    .laundry-tit .fz-60{
+        font-size: 40px;
+    }
+    .laundry-tit .mt-50{
+        margin-top: 20px;
+    }
+    .laundry-concept-tit p{
+        width: 95%;
+    }
+    .laundry-typo-wrap .fz-20{
+        font-size: 17px;
+    }
+}
+@media (max-width: 361px){
+    .laundry-page .container{
+        width: 90%;
+    }
+    .laundry-header{
+        height: 555px;
+    }
+    .laundry-tit{
+        top: 22%;
+        right: 26.6%;
+    }
+    .laundry-concept-tit p{
+        width: 100%;
+        letter-spacing: -1px;
+    }
+    .laundry-concept-tit span.fz-28{
+        font-size: 24px;
+    }
+}
+@media (max-width: 321px){
+    .laundry-header{
+        height: 520px;
+    }
+    .laundry-macbook{
+        padding: 110% 0 0 0;
+    }
+    .laundry-tit{
+        top: 24%;
+        right: 27%;
+    }
+    .laundry-tit .fz-60{
+        font-size: 35px;
+    }
+    .laundry-tit .fz-25{
+        font-size: 16px;
+    }
+    .laundry-concept-tit .fz-40, .laundry-color-list .fz-40, .laundry-typo .fz-40{
+        font-size: 25px;
+    }
+    .laundry-page .container{
+        width: 90%;
+    }
+    .laundry-concept-tit p{
+        width: 100%;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .laundry-concept-tit span.fz-28{
+        font-size: 23px;
+    }
+    .laundry-color01, .laundry-color02{
+        width: 130px;
+        height: 130px;
+    }
+    .laundry-typo-wrap .fz-20{
+        font-size: 16px;
+    }
+    .laundry-concept-tit .mt-20, .laundry-color .mt-20, .wireframe-img{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 281px){
+    .laundry-page .container{
+        width: 95%;
+    }
+    .laundry-header{
+        height: 460px;
+    }
+    .laundry-macbook{
+        padding: 105% 0 0 0;
+    }
+    .laundry-tit{
+        top: 24%;
+        right: 25%;
+    }
+    .laundry-tit .fz-24{
+        font-size: 20px;
+    }
+    .laundry-tit .fz-60{
+        font-size: 30px;
+    }
+    .laundry-tit .fz-25{
+        font-size: 15px;
+    }
+    .laundry-viewbtn .fz-20{
+        font-size: 15px;
+    }
+    .laundry-tit .mt-50{
+        margin-top: 15px;
+    }
+    .laundry-concept-tit .fz-40, .laundry-color .fz-40, .laundry-typo .fz-40{
+        font-size: 23px;
+    }
+    .laundry-concept-tit p{
+        width: 95%;
+        line-height: 22px;
+        font-size: 12px;
+    }
+    .laundry-concept-tit span.fz-28{
+        font-size: 21px;
+    }
+    .laundry-color01, .laundry-color02{
+        width: 100px;
+        height: 100px;
+    }
+    .laundry-color-wrap div p.fz-20{
+        font-size: 12px;
+    }
+    .laundry-concept-wrap .mt-50{
+        margin-top: 30px;
+    }
+    .laundry-typo{
+        margin-top: 30px;
+    }
+    .laundry-typo-wrap .fz-20{
+        font-size: 14px;
+        line-height: 15px;
+    }
+}
+/* ========== 런드리룸 END ========== */

@@ -147,6 +147,9 @@
     width: 100%;
     background: #f6f6f6;
 }
+.royal-concept-tit p{
+    line-height: 40px;
+}
 .royal-concept{
     justify-content: space-between;
     margin: 50px auto 0;
@@ -217,6 +220,9 @@
 }
 .royal-typo-wrap ul li:last-child{
     font-weight: bold;
+}
+.wireframe-img{
+    margin-top: 20px;
 }
 .wireframe-img img{
     width: 100%;
