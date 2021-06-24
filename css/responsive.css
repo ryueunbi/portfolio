@@ -1241,3 +1241,258 @@
     }
 }
 /* ========== 런드리룸 END ========== */
+
+/* ========== 제주용암수 ========== */
+@media (max-width: 1025px){
+    .jeju-header{
+        height: 1000px;
+    }
+    .jeju-macbook{
+        padding: 55% 0 0 0;
+        max-width: none;
+    }
+    .jeju-tit{
+        top: 15%;
+        right: 33.4%;
+        text-align: center;
+    }
+    .jeju-tit .mb-20{
+        margin-bottom: 5px;
+    }
+    .jeju-tit .mt-50{
+        margin-top: 25px;
+    }
+    .jeju-concept-tit p{
+        width: 80%;
+        margin: 20px auto 0;
+    }
+}
+@media (max-width: 769px){
+    .jeju-header{
+        height: 900px;
+    }
+    .jeju-macbook{
+        padding: 75% 0 0 0;
+    }
+    .jeju-tit{
+        top: 17%;
+        right: 28.2%;
+    }
+    .jeju-concept-tit p{
+        width: 95%;
+    }
+}
+@media (max-width: 541px){
+    .jeju-header{
+        height: 650px;
+    }
+    .jeju-macbook{
+        padding: 82% 0 0 0;
+    }
+    .jeju-tit{
+        top: 18%;
+        right: 23.6%;
+    }
+    .jeju-tit .fz-60{
+        font-size: 50px;
+    }
+    .jeju-tit .fz-25{
+        font-size: 20px;
+    }
+    .jeju-viewbtn button{
+        padding: 1px 30px;
+    }
+    .jeju-viewbtn .fz-20{
+        font-size: 18px;
+    }
+    .jeju-page .pt-120{
+        padding-top: 80px;
+    }
+    .jeju-page .pb-120{
+        padding-bottom: 80px;
+    }
+    .jeju-concept-tit .fz-40{
+        font-size: 30px;
+    }
+    .jeju-concept-tit p{
+        line-height: 35px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 415px){
+    .jeju-header{
+        height: 550px;
+    }
+    .jeju-macbook{
+        padding: 96% 0 0 0;
+    }
+    .jeju-tit{
+        right: 17.6%;
+    }
+    .jeju-tit .fz-60{
+        font-size: 45px;
+    }
+    .jeju-tit .fz-24{
+        font-size: 22px;
+    }
+    .jeju-tit .fz-25{
+        font-size: 18px;
+    }
+    .jeju-page .pt-120{
+        padding-top: 60px;
+    }
+    .jeju-page .pb-120{
+        padding-bottom: 60px;
+    }
+    .jeju-concept-wrap .container{
+        width: 85%;
+    }
+    .jeju-concept-tit p{
+        line-height: 30px;
+        font-size: 15px;
+        width: 100%;
+    }
+    .jeju-concept-tit .fz-40{
+        font-size: 28px;
+    }
+}
+@media (max-width: 376px){
+    .jeju-concept-wrap .container{
+        width: 95%;
+    }
+    .jeju-tit{
+        top: 21%;
+        right: 20.5%;
+    }
+    .jeju-header{
+        height: 515px;
+    }
+    .jeju-macbook{
+        padding: 100% 0 0 0;
+    }
+    .jeju-tit .fz-60{
+        font-size: 40px;
+    }
+    .jeju-tit .mt-50{
+        margin-top: 20px;
+    }
+    .jeju-concept-tit p{
+        width: 100%;
+    }
+}
+@media (max-width: 361px){
+    .jeju-page .container{
+        width: 90%;
+    }
+    .jeju-header{
+        height: 555px;
+    }
+    .jeju-tit{
+        top: 22%;
+        right: 21.3%;
+    }
+    .jeju-page .container{
+        width: 95%;
+    }
+}
+@media (max-width: 321px){
+    .jeju-header{
+        height: 520px;
+    }
+    .jeju-macbook{
+        padding: 110% 0 0 0;
+    }
+    .jeju-tit{
+        top: 24%;
+        right: 24.2%;
+    }
+    .jeju-tit .fz-60{
+        font-size: 35px;
+    }
+    .jeju-tit .fz-25{
+        font-size: 16px;
+    }
+    .jeju-concept-tit .fz-40{
+        font-size: 25px;
+    }
+    .jeju-page .container{
+        width: 90%;
+    }
+    .jeju-concept-tit p{
+        width: 100%;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .jeju-concept-tit .mt-20{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 281px){
+    .jeju-page .container{
+        width: 95%;
+    }
+    .jeju-header{
+        height: 460px;
+    }
+    .jeju-macbook{
+        padding: 105% 0 0 0;
+    }
+    .jeju-tit{
+        top: 24%;
+        right: 23.9%;
+    }
+    .jeju-tit .fz-24{
+        font-size: 20px;
+    }
+    .jeju-tit .fz-60{
+        font-size: 30px;
+    }
+    .jeju-tit .fz-25{
+        font-size: 15px;
+    }
+    .jeju-viewbtn .fz-20{
+        font-size: 15px;
+    }
+    .jeju-tit .mt-50{
+        margin-top: 15px;
+    }
+    .jeju-concept-tit .fz-40{
+        font-size: 23px;
+    }
+    .jeju-concept-tit p{
+        width: 100%;
+        line-height: 22px;
+        font-size: 12px;
+    }
+}
+/* ========== 제주용암수 END ========== */
+
+/* ========== 오설록 ========== */
+@media (max-width: 1025px){
+    .osul-header{
+        height: 1000px;
+    }
+    .osul-macbook{
+        padding: 55% 0 0 0;
+        max-width: none;
+    }
+    .osul-tit{
+        top: 15%;
+        right: 40%;
+        text-align: center;
+    }
+    .osul-tit .mb-20{
+        margin-bottom: 5px;
+    }
+    .osul-tit .mt-50{
+        margin-top: 25px;
+    }
+    .osul-concept-tit p{
+        width: 80%;
+        margin: 20px auto 0;
+    }
+    .osul-concept{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
