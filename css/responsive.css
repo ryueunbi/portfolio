@@ -574,8 +574,14 @@
     }
 }
 @media (max-width: 361px){
-    .smw-concept-tit p{
+    .royal-page .container{
         width: 95%;
+    }
+    .royal-concept-wrap .container{
+        width: 100%;
+    }
+    .smw-concept-tit p{
+        width: 89%;
     }
     .smw-color01, .smw-color02, .smw-color03{
         height: 103px;
@@ -690,7 +696,6 @@
     }
     .royal-concept{
         width: 100%;
-        justify-content: space-between;
     }
     .monitor{
         display: none;
@@ -710,11 +715,13 @@
         top: 17%;
         right: 37%;
     }
+    .royal-concept-wrap .container{
+        width: 100%;
+    }
     .royal-concept-tit p{
         width: 95%;
     }
     .royal-concept{
-        justify-content: center;
         flex-direction: column;
     }
     .royal-typo{
@@ -754,11 +761,9 @@
         font-size: 30px;
     }
     .royal-concept-tit p{
+        width: 85%;
         line-height: 35px;
         font-size: 16px;
-    }
-    .royal-color-wrap{
-        flex-direction: row;
     }
     .royal-color-wrap div p.fz-20{        
         font-size: 16px;
@@ -798,7 +803,7 @@
     .royal-concept-tit p{
         line-height: 30px;
         font-size: 15px;
-        width: 97%;
+        width: 90%;
     }
     .royal-color01{
         margin-right: 10px;
@@ -811,9 +816,6 @@
     }
 }
 @media (max-width: 376px){
-    .royal-concept-wrap .container{
-        width: 95%;
-    }
     .royal-tit{
         top: 21%;
         right: 27%;
@@ -838,23 +840,23 @@
     }
 }
 @media (max-width: 361px){
-    .royal-page .container{
-        width: 90%;
-    }
     .royal-header{
         height: 555px;
     }
     .royal-tit{
         top: 22%;
     }
-    .royal-page .container{
-        width: 95%;
-    }
     .royal-concept-tit p{
-        width: 100%;
+        width: 94%;
     }
 }
 @media (max-width: 321px){
+    .royal-page .container{
+        width: 95%;
+    }
+    .royal-concept-wrap .container{
+        width: 100%;
+    }
     .royal-header{
         height: 520px;
     }
@@ -873,11 +875,8 @@
     .royal-concept-tit .fz-40, .royal-color-list .fz-40, .royal-typo .fz-40{
         font-size: 25px;
     }
-    .royal-page .container{
-        width: 90%;
-    }
     .royal-concept-tit p{
-        width: 100%;
+        width: 90%;
         line-height: 25px;
         font-size: 14px;
     }
@@ -893,9 +892,6 @@
     }
 }
 @media (max-width: 281px){
-    .royal-page .container{
-        width: 95%;
-    }
     .royal-header{
         height: 460px;
     }
@@ -925,7 +921,7 @@
         font-size: 23px;
     }
     .royal-concept-tit p{
-        width: 95%;
+        width: 90%;
         line-height: 22px;
         font-size: 12px;
     }
@@ -961,7 +957,7 @@
     }
     .laundry-tit{
         top: 15%;
-        right: 36.5%;
+        right: 36.7%;
         text-align: center;
     }
     .laundry-tit .mb-20{
@@ -976,7 +972,6 @@
     }
     .laundry-concept{
         width: 100%;
-        justify-content: space-between;
     }
 }
 @media (max-width: 769px){
@@ -991,8 +986,7 @@
         right: 32.6%;
     }
     .laundry-concept-tit p{
-        width: 100%;
-        letter-spacing: -1.5px;
+        width: 90%;
     }
     .laundry-concept{
         justify-content: center;
@@ -1003,6 +997,9 @@
     }
     .laundry-typo{
         margin-top: 50px;
+    }
+    .laundry-concept-wrap .container{
+        width: 100%;
     }
 }
 @media (max-width: 541px){
@@ -1028,11 +1025,8 @@
     .laundry-viewbtn .fz-20{
         font-size: 18px;
     }
-    .laundry-concept-wrap .container{
-        width: 90%;
-    }
     .laundry-concept-tit p{
-        width: 100%;
+        width: 90%;
     }
     .laundry-page .pt-120{
         padding-top: 80px;
@@ -1082,7 +1076,7 @@
     .laundry-concept-tit p{
         line-height: 30px;
         font-size: 15px;
-        width: 90%;
+        width: 85%;
     }
     .laundry-color01{
         margin-right: 10px;
@@ -1095,9 +1089,6 @@
     }
 }
 @media (max-width: 376px){
-    .laundry-concept-wrap .container{
-        width: 95%;
-    }
     .laundry-tit{
         top: 21%;
         right: 26.5%;
@@ -1115,16 +1106,16 @@
         margin-top: 20px;
     }
     .laundry-concept-tit p{
-        width: 95%;
+        width: 85%;
     }
     .laundry-typo-wrap .fz-20{
         font-size: 17px;
     }
+    .laundry-concept-tit span.fz-28{
+        font-size: 26px;
+    }
 }
 @media (max-width: 361px){
-    .laundry-page .container{
-        width: 90%;
-    }
     .laundry-header{
         height: 555px;
     }
@@ -1133,8 +1124,7 @@
         right: 26.6%;
     }
     .laundry-concept-tit p{
-        width: 100%;
-        letter-spacing: -1px;
+        width: 90%;
     }
     .laundry-concept-tit span.fz-28{
         font-size: 24px;
@@ -1160,12 +1150,10 @@
     .laundry-concept-tit .fz-40, .laundry-color-list .fz-40, .laundry-typo .fz-40{
         font-size: 25px;
     }
-    .laundry-page .container{
-        width: 90%;
-    }
     .laundry-concept-tit p{
-        width: 100%;
+        width: 85%;
         line-height: 25px;
+        letter-spacing: -1.5px;
         font-size: 14px;
     }
     .laundry-concept-tit span.fz-28{
@@ -1183,9 +1171,6 @@
     }
 }
 @media (max-width: 281px){
-    .laundry-page .container{
-        width: 95%;
-    }
     .laundry-header{
         height: 460px;
     }
@@ -1215,7 +1200,7 @@
         font-size: 23px;
     }
     .laundry-concept-tit p{
-        width: 95%;
+        width: 90%;
         line-height: 22px;
         font-size: 12px;
     }
@@ -1263,8 +1248,7 @@
         margin-top: 25px;
     }
     .jeju-concept-tit p{
-        width: 80%;
-        margin: 20px auto 0;
+        width: 100%;
     }
 }
 @media (max-width: 769px){
@@ -1277,9 +1261,6 @@
     .jeju-tit{
         top: 17%;
         right: 28.2%;
-    }
-    .jeju-concept-tit p{
-        width: 95%;
     }
 }
 @media (max-width: 541px){
@@ -1318,6 +1299,9 @@
         line-height: 35px;
         font-size: 16px;
     }
+    .jeju-concept-wrap .container{
+        width: 100%;
+    }
 }
 @media (max-width: 415px){
     .jeju-header{
@@ -1344,9 +1328,6 @@
     .jeju-page .pb-120{
         padding-bottom: 60px;
     }
-    .jeju-concept-wrap .container{
-        width: 85%;
-    }
     .jeju-concept-tit p{
         line-height: 30px;
         font-size: 15px;
@@ -1357,9 +1338,6 @@
     }
 }
 @media (max-width: 376px){
-    .jeju-concept-wrap .container{
-        width: 95%;
-    }
     .jeju-tit{
         top: 21%;
         right: 20.5%;
@@ -1381,18 +1359,18 @@
     }
 }
 @media (max-width: 361px){
-    .jeju-page .container{
-        width: 90%;
-    }
     .jeju-header{
         height: 555px;
+    }
+    .jeju-page .container{
+        width: 95%;
+    }
+    .jeju-concept-wrap .container{
+        width: 100%;
     }
     .jeju-tit{
         top: 22%;
         right: 21.3%;
-    }
-    .jeju-page .container{
-        width: 95%;
     }
 }
 @media (max-width: 321px){
@@ -1404,7 +1382,7 @@
     }
     .jeju-tit{
         top: 24%;
-        right: 24.2%;
+        right: 24.4%;
     }
     .jeju-tit .fz-60{
         font-size: 35px;
@@ -1415,12 +1393,10 @@
     .jeju-concept-tit .fz-40{
         font-size: 25px;
     }
-    .jeju-page .container{
-        width: 90%;
-    }
     .jeju-concept-tit p{
         width: 100%;
         line-height: 25px;
+        letter-spacing: -1.5px;
         font-size: 14px;
     }
     .jeju-concept-tit .mt-20{
@@ -1428,9 +1404,6 @@
     }
 }
 @media (max-width: 281px){
-    .jeju-page .container{
-        width: 95%;
-    }
     .jeju-header{
         height: 460px;
     }
@@ -1494,5 +1467,568 @@
     .osul-concept{
         width: 100%;
         justify-content: space-between;
+    }
+}
+@media (max-width: 769px){
+    .osul-header{
+        height: 900px;
+    }
+    .osul-macbook{
+        padding: 75% 0 0 0;
+    }
+    .osul-tit{
+        top: 17%;
+        right: 37%;
+    }
+    .osul-concept-wrap .container{
+        width: 100%;
+    }
+    .osul-concept-tit p{
+        width: 80%;
+    }
+    .osul-concept{
+        flex-direction: column;
+    }
+    .osul-typo{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 541px){
+    .osul-header{
+        height: 650px;
+    }
+    .osul-macbook{
+        padding: 82% 0 0 0;
+    }
+    .osul-tit{
+        top: 18%;
+        right: 32%;
+    }
+    .osul-tit .fz-60{
+        font-size: 50px;
+    }
+    .osul-tit .fz-25{
+        font-size: 20px;
+    }
+    .osul-viewbtn button{
+        padding: 1px 30px;
+    }
+    .osul-viewbtn .fz-20{
+        font-size: 18px;
+    }
+    .osul-page .pt-120{
+        padding-top: 80px;
+    }
+    .osul-page .pb-120{
+        padding-bottom: 80px;
+    }
+    .osul-concept-tit .fz-40, .osul-color .fz-40, .osul-typo .fz-40{
+        font-size: 30px;
+    }
+    .osul-concept-tit p{
+        width: 90%;
+        line-height: 35px;
+        font-size: 16px;
+    }
+    .osul-color-wrap{
+        flex-direction: row;
+    }
+    .osul-color-wrap div p.fz-20{        
+        font-size: 16px;
+    }
+    .osul-typo-wrap .fz-20{
+        font-size: 18px;
+    }
+    .osul-typo{
+        margin-top: 50px;
+    }
+    .osul-typo ul.fz-24{
+        font-size: 20px;
+    }
+}
+@media (max-width: 415px){
+    .osul-header{
+        height: 550px;
+    }
+    .osul-macbook{
+        padding: 96% 0 0 0;
+    }
+    .osul-tit{
+        right: 27%;
+    }
+    .osul-tit .fz-60{
+        font-size: 45px;
+    }
+    .osul-tit .fz-24{
+        font-size: 22px;
+    }
+    .osul-tit .fz-25{
+        font-size: 18px;
+    }
+    .osul-page .pt-120{
+        padding-top: 60px;
+    }
+    .osul-page .pb-120{
+        padding-bottom: 60px;
+    }
+    .osul-concept-tit p{
+        line-height: 30px;
+        font-size: 15px;
+        width: 90%;
+    }
+    .osul-color01{
+        margin-right: 10px;
+    }
+    .osul-color-wrap div p.fz-20{
+        font-size: 15px;
+    }
+    .osul-concept-tit .fz-40, .osul-color .fz-40, .osul-typo .fz-40{
+        font-size: 28px;
+    }
+    .osul-typo ul.fz-24{
+        font-size: 18px;
+    }
+}
+@media (max-width: 376px){
+    .osul-tit{
+        top: 21%;
+        right: 27%;
+    }
+    .osul-header{
+        height: 515px;
+    }
+    .osul-macbook{
+        padding: 100% 0 0 0;
+    }
+    .osul-tit .fz-60{
+        font-size: 40px;
+    }
+    .osul-tit .mt-50{
+        margin-top: 20px;
+    }
+    .osul-concept-tit p{
+        width: 90%;
+    }
+    .osul-typo-wrap .fz-20{
+        font-size: 17px;
+    }
+}
+@media (max-width: 361px){
+    .osul-header{
+        height: 555px;
+    }
+    .osul-tit{
+        top: 22%;
+    }
+    .osul-page .container{
+        width: 95%;
+    }
+    .osul-concept-wrap .container{
+        width: 100%;
+    }
+    .osul-concept-tit p{
+        width: 89%;
+    }
+    .osul-typo ul.fz-24{
+        font-size: 17px;
+    }
+}
+@media (max-width: 321px){
+    .osul-header{
+        height: 520px;
+    }
+    .osul-macbook{
+        padding: 110% 0 0 0;
+    }
+    .osul-tit{
+        top: 24%;
+    }
+    .osul-tit .fz-60{
+        font-size: 35px;
+    }
+    .osul-tit .fz-25{
+        font-size: 16px;
+    }
+    .osul-concept-tit .fz-40, .osul-color-list .fz-40, .osul-typo .fz-40{
+        font-size: 25px;
+    }
+    .osul-concept-tit p{
+        width: 90%;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .osul-color01, .osul-color02{
+        width: 130px;
+        height: 130px;
+    }
+    .osul-typo-wrap .fz-20{
+        font-size: 16px;
+    }
+    .osul-concept-tit .mt-20, .osul-color .mt-20, .wireframe-img{
+        margin-top: 10px;
+    }
+    .osul-typo ul.fz-24{
+        font-size: 16px;
+    }
+}
+@media (max-width: 281px){
+    .osul-header{
+        height: 460px;
+    }
+    .osul-macbook{
+        padding: 105% 0 0 0;
+    }
+    .osul-tit{
+        top: 24%;
+        right: 25%;
+    }
+    .osul-tit .fz-24{
+        font-size: 20px;
+    }
+    .osul-tit .fz-60{
+        font-size: 30px;
+    }
+    .osul-tit .fz-25{
+        font-size: 15px;
+    }
+    .osul-viewbtn .fz-20{
+        font-size: 15px;
+    }
+    .osul-tit .mt-50{
+        margin-top: 15px;
+    }
+    .osul-concept-tit .fz-40, .osul-color .fz-40, .osul-typo .fz-40{
+        font-size: 23px;
+    }
+    .osul-concept-tit p{
+        width: 88%;
+        line-height: 22px;
+        font-size: 12px;
+    }
+    .osul-color01, .osul-color02{
+        width: 100px;
+        height: 100px;
+    }
+    .osul-color-wrap div p.fz-20{
+        font-size: 12px;
+    }
+    .osul-concept-wrap .mt-50{
+        margin-top: 30px;
+    }
+    .osul-typo{
+        margin-top: 30px;
+    }
+    .osul-typo-wrap .fz-20{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .osul-typo ul.fz-24{
+        font-size: 14px;
+        margin-top: 0;
+    }
+}
+/* ========== 오설록 END ========== */
+
+/* ========== 굿다이노 ========== */
+@media (max-width: 1025px){
+    .gd-header{
+        height: 1000px;
+    }
+    .gd-macbook{
+        padding: 55% 0 0 0;
+        max-width: none;
+    }
+    .gd-tit{
+        top: 15%;
+        right: 36.7%;
+        text-align: center;
+    }
+    .gd-tit .mb-20{
+        margin-bottom: 5px;
+    }
+    .gd-tit .mt-50{
+        margin-top: 25px;
+    }
+    .gd-concept-tit p{
+        width: 100%;
+        margin: 20px auto 0;
+    }
+    .gd-concept{
+        width: 100%;
+    }
+}
+@media (max-width: 769px){
+    .gd-header{
+        height: 900px;
+    }
+    .gd-macbook{
+        padding: 75% 0 0 0;
+    }
+    .gd-tit{
+        top: 17%;
+        right: 32.59%;
+    }
+    .gd-concept-wrap .container{
+        width: 100%;
+    }
+    .gd-concept-tit p{
+        width: 100%;
+    }
+    .gd-concept{
+        flex-direction: column;
+    }
+    .gd-typo{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 541px){
+    .gd-header{
+        height: 650px;
+    }
+    .gd-macbook{
+        padding: 82% 0 0 0;
+    }
+    .gd-tit{
+        top: 18%;
+        right: 28.84%;
+    }
+    .gd-tit .fz-60{
+        font-size: 50px;
+    }
+    .gd-tit .fz-25{
+        font-size: 20px;
+    }
+    .gd-viewbtn button{
+        padding: 1px 30px;
+    }
+    .gd-viewbtn .fz-20{
+        font-size: 18px;
+    }
+    .gd-page .pt-120{
+        padding-top: 80px;
+    }
+    .gd-page .pb-120{
+        padding-bottom: 80px;
+    }
+    .gd-concept-tit .fz-40, .gd-color .fz-40, .gd-typo .fz-40{
+        font-size: 30px;
+    }
+    .gd-concept-tit p{
+        line-height: 35px;
+        font-size: 16px;
+    }
+    .gd-color-wrap div p.fz-20{        
+        font-size: 16px;
+    }
+    .gd-typo-wrap .fz-20{
+        font-size: 18px;
+    }
+    .gd-typo{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 415px){
+    .gd-header{
+        height: 550px;
+    }
+    .gd-macbook{
+        padding: 96% 0 0 0;
+    }
+    .gd-tit{
+        right: 23.73%;
+    }
+    .gd-tit .fz-60{
+        font-size: 45px;
+    }
+    .gd-tit .fz-24{
+        font-size: 22px;
+    }
+    .gd-tit .fz-25{
+        font-size: 18px;
+    }
+    .gd-page .pt-120{
+        padding-top: 60px;
+    }
+    .gd-page .pb-120{
+        padding-bottom: 60px;
+    }
+    .gd-concept-tit p{
+        line-height: 30px;
+        font-size: 15px;
+    }
+    .gd-color01{
+        margin-right: 10px;
+    }
+    .gd-color-wrap div p.fz-20{
+        font-size: 15px;
+    }
+    .gd-concept-tit .fz-40, .gd-color .fz-40, .gd-typo .fz-40{
+        font-size: 28px;
+    }
+}
+@media (max-width: 376px){
+    .gd-page .container{
+        width: 95%;
+    }
+    .gd-concept-wrap .container{
+        width: 100%;
+    }
+    .gd-tit{
+        top: 21%;
+        right: 26.45%;
+    }
+    .gd-header{
+        height: 515px;
+    }
+    .gd-macbook{
+        padding: 100% 0 0 0;
+    }
+    .gd-tit .fz-60{
+        font-size: 40px;
+    }
+    .gd-tit .mt-50{
+        margin-top: 20px;
+    }
+    .gd-concept-tit p{
+        width: 100%;
+    }
+    .gd-typo-wrap .fz-20{
+        font-size: 17px;
+    }
+}
+@media (max-width: 361px){
+    .gd-header{
+        height: 555px;
+    }
+    .gd-tit{
+        top: 22%;
+        right: 26.54%;
+    }
+    .gd-concept-tit p{
+        width: 100%;
+    }
+}
+@media (max-width: 321px){
+    .gd-header{
+        height: 520px;
+    }
+    .gd-macbook{
+        padding: 110% 0 0 0;
+    }
+    .gd-tit{
+        top: 24%;
+        right: 26.97%;
+    }
+    .gd-tit .fz-60{
+        font-size: 35px;
+    }
+    .gd-tit .fz-25{
+        font-size: 16px;
+    }
+    .gd-concept-tit .fz-40, .gd-color-list .fz-40, .gd-typo .fz-40{
+        font-size: 25px;
+    }
+    .gd-concept-tit p{
+        width: 90%;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .gd-color01, .gd-color02{
+        width: 130px;
+        height: 130px;
+    }
+    .gd-typo-wrap .fz-20{
+        font-size: 16px;
+    }
+    .gd-concept-tit .mt-20, .gd-color .mt-20, .wireframe-img{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 281px){
+    .gd-header{
+        height: 460px;
+    }
+    .gd-macbook{
+        padding: 105% 0 0 0;
+    }
+    .gd-tit{
+        top: 24%;
+        right: 25%;
+    }
+    .gd-tit .fz-24{
+        font-size: 20px;
+    }
+    .gd-tit .fz-60{
+        font-size: 30px;
+    }
+    .gd-tit .fz-25{
+        font-size: 15px;
+    }
+    .gd-viewbtn .fz-20{
+        font-size: 15px;
+    }
+    .gd-tit .mt-50{
+        margin-top: 15px;
+    }
+    .gd-concept-tit .fz-40, .gd-color .fz-40, .gd-typo .fz-40{
+        font-size: 23px;
+    }
+    .gd-concept-tit p{
+        width: 90%;
+        line-height: 22px;
+        font-size: 12px;
+    }
+    .gd-color01, .gd-color02{
+        width: 100px;
+        height: 100px;
+    }
+    .gd-color-wrap div p.fz-20{
+        font-size: 12px;
+    }
+    .gd-concept-wrap .mt-50{
+        margin-top: 30px;
+    }
+    .gd-typo{
+        margin-top: 30px;
+    }
+    .gd-typo-wrap .fz-20{
+        font-size: 14px;
+        line-height: 15px;
+    }
+}
+/* ========== 굿다이노 END ========== */
+
+/* ========== MBTI ========== */
+@media (max-width: 1025px){
+    .royal-header{
+        height: 1000px;
+    }
+    .royal-macbook{
+        padding: 55% 0 0 0;
+        max-width: none;
+    }
+    .royal-tit{
+        top: 15%;
+        right: 40%;
+        text-align: center;
+    }
+    .royal-tit .mb-20{
+        margin-bottom: 5px;
+    }
+    .royal-tit .mt-50{
+        margin-top: 25px;
+    }
+    .royal-concept-tit p{
+        width: 80%;
+        margin: 20px auto 0;
+    }
+    .royal-concept{
+        width: 100%;
+    }
+    .monitor{
+        display: none;
+    }
+    .rs-monitor{
+        display: block;
     }
 }

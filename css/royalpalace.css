@@ -147,9 +147,6 @@
     width: 100%;
     background: #f6f6f6;
 }
-.royal-concept-tit p{
-    line-height: 40px;
-}
 .royal-concept{
     justify-content: space-between;
     margin: 50px auto 0;
@@ -180,7 +177,6 @@
     width: 150px;
     height: 150px;
     background: #323650;
-    /* border: 1px solid #323650; */
     border-radius: 100%;
     color: #fff;
 }
@@ -189,10 +185,10 @@
     flex-direction: column;
     align-items: center;    
 }
-.royal-concept-wrap div .concept-tit{
+.royal-concept-tit{
     flex-direction: column;
 }
-.royal-concept-wrap div.concept-tit p{
+.royal-concept-tit p{
     line-height: 40px;
     font-weight: 400;
 }

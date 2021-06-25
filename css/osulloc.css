@@ -152,7 +152,6 @@
     font-weight: 400;
 }
 .osul-color-wrap div{
-    margin-right: 20px;
     position: relative;
 }
 .osul-color-wrap div p{
@@ -176,6 +175,7 @@
     height: 150px;
     background: #699851;
     border-radius: 100%;
+    margin-right: 20px;
 }
 .osul-color02{
     width: 150px;
@@ -223,6 +223,9 @@
 }
 .osul-typo-wrap ul li:last-child{
     font-weight: bold;
+}
+.wireframe-img{
+    margin-top: 20px;
 }
 .wireframe-img img{
     width: 100%;
